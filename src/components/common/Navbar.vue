@@ -1,4 +1,4 @@
-<!--  -->
+<!-- common navbar -->
 <template>
   <div id="navbar">
     <div>
@@ -27,8 +27,9 @@ export default {
 
 <style lang='css' scoped>
   #navbar {
-    position: fixed;
-    top: 0;
-    
+    width: 80%;
+    height: 55px;
+    background-color: pink;
+    margin: 0 auto;
   }
 </style>

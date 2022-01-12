@@ -1,6 +1,6 @@
 <!--  -->
 <template>
-  <div>
+  <div id="SNavbar">
     <nav-bar :navbarList="navbarList" ></nav-bar>
   </div>
 </template>
@@ -21,4 +21,9 @@
 </script>
 
 <style lang='css' scoped>
+  #SNavbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 </style>
