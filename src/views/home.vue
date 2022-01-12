@@ -1,21 +1,15 @@
 <!--  -->
 <template>
-  <div>
-    <nav-bar></nav-bar>
-  </div>
+  <div></div>
 </template>
 
 <script>
-  import HomeNavbar from "components/common/HomeNavbar"
-
   export default {
     data () {
       return {
       };
     },
-    components: {
-      "nav-bar": HomeNavbar
-    },
+    components: {},
   }
 </script>
 

@@ -5,12 +5,7 @@
       <div></div>
       <div>
         <ul>
-          <li>主页</li>
-          <li>公司</li>
-          <li>产品</li>
-          <li>动态</li>
-          <li>商城</li>
-          <li>联系</li>
+          <li v-for="item in navbarList" :key="item">{{item}}</li>
         </ul>
       </div>
     </div>
@@ -21,8 +16,10 @@
 export default {
   data () {
     return {
-      navbarList: []
     };
+  },
+  props: {
+    navbarList: Array
   },
   components: {},
 }

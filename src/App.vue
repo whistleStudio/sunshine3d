@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <home/>
+    <s-nav-bar></s-nav-bar>
   </div>
 </template>
 
 <script>
-  import Home from "views/home"
+  import SNavbar from "components/private/SNavbar"
 
   export default {
     name: 'App',
     components: {
-      "home": Home
+      "s-nav-bar": SNavbar
     }
   }
 </script>
