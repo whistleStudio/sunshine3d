@@ -1,6 +1,8 @@
-<!--  -->
+<!-- PRODUCT -->
 <template>
-  <div></div>
+  <div>
+    <h1>product</h1>
+  </div>
 </template>
 
 <script>

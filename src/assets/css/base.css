@@ -1,10 +1,14 @@
 @import "../../../node_modules/normalize.css/normalize.css";
 
-body {
+* {
   margin: 0;
   padding: 0;
 }
 
 ul {
   list-style: none;
+}
+
+:root {
+  --rFontColor: rgb(78, 243, 229);
 }
