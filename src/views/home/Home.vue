@@ -2,12 +2,14 @@
 <template>
   <div>
     <!-- <h1>home</h1> -->
-    <s-banner></s-banner>
+    <h-banner></h-banner>
+    <h-product></h-product>
   </div>
 </template>
 
 <script>
-  import SBanner from "views/home/SBanner"
+  import H_banner from "views/home/H_banner"
+  import H_product from "views/home/H_product"
 
   export default {
     data () {
@@ -15,7 +17,8 @@
       };
     },
     components: {
-      "s-banner": SBanner
+      "h-banner": H_banner,
+      "h-product": H_product
     },
   }
 </script>

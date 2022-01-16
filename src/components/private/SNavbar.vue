@@ -1,7 +1,7 @@
 <!--  -->
 <template>
   <div id="SNavbar">
-    <nav-bar :navbarList="navbarList" fontColor="black" :logoSrc="logoUrl"></nav-bar>
+    <nav-bar :navbarList="navbarList" fontColor="white" :logoSrc="logoUrl"></nav-bar>
   </div>
 </template>
 
@@ -32,7 +32,7 @@
 <style lang='css' scoped>
   #SNavbar {
     position: fixed;
-    top: 0;
+    top: 2rem;
     width: 100%;
   }
 </style>

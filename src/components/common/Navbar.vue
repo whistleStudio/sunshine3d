@@ -53,19 +53,19 @@ export default {
   #navbar {
     width: 90%;
     height: 55px;
-    background-color: pink;
+    /* background-color: pink; */
     margin: 0 auto;
   }
   #logo {
     width: 100px;
     height: 55px;
     float: left;
-    background-color: orange;
+    /* background-color: orange; */
     height: 55px;
   }
   #nav {
     float: right;
-    background-color: olive;
+    /* background-color: olive; */
     height: 55px;
   }
   #navMenu {

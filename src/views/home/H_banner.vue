@@ -1,7 +1,7 @@
 <!-- home>banner -->
 <template>
   <div>
-    <banner/>
+    <banner :banner-name="bannerName" :font-color="fontColor" />
   </div>
 </template>
 
@@ -11,6 +11,8 @@
   export default {
     data () {
       return {
+        bannerName: "homeBanner.jpg",
+        fontColor: "white"
       };
     },
     components: {
