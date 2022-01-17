@@ -1,61 +1,52 @@
 <template>
   <div id="product">
-    <div id="intro"></div>
+    <div id="intro"><span>主要产品</span></div>
     <div id="content">
-      <ul>
-        <li v-for="pro in proContent" :key="pro.id">
-          <img src="" alt="">
-          <div>{{pro.name}}</div>
-        </li>
-      </ul>
+      <s-cardlist></s-cardlist>
     </div>
   </div>
 </template>
 
 <script>
+import SCardList from "components/private/SCardList"
+
 export default {
   data() {
     return {
-      proContent: [
-        {id: 0, name: "PLA"},
-        {id: 1, name: "PLA+"},
-        {id: 2, name: "ABS"},
-        {id: 3, name: "TPU"}
-      ]
+
     }
   },
   components: {
-
+    "s-cardlist": SCardList
   }
 }
 </script>
 
 <style scoped>
   #product {
-    background-color: pink;
-    height: 60vh;
+    /* background-color: rgb(248, 248, 255); */
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   #intro {
-    width: 60%;
-    height: 10vh;
-    background-color: orange;
+    width: 80%;
+    height: 15vh;
+    /* background-color: orange; */
+    font: 2rem "Microsoft YaHei";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #intro>span {
+    display: block;
   }
   #content {
     width: 80%;
-    height: 40vh;
-    background-color: olive;
+    height: 45vh;
+    /* background-color: olive; */
   }
-  #content>ul {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  #content li {
-    width: 22%;
-    height: 40vh;
-    background-color: skyblue;
-  }
+
 </style>
