@@ -25,24 +25,13 @@ export default {
 <style scoped>
   #product {
     /* background-color: rgb(248, 248, 255); */
-    height: 75vh;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  #intro {
-    width: 80%;
-    height: 15vh;
-    /* background-color: orange; */
-    font: 2rem "Microsoft YaHei";
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  #intro>span {
-    display: block;
-  }
+
   #content {
     width: 80%;
     height: 45vh;

@@ -12,3 +12,16 @@ ul {
 :root {
   --rFontColor: rgb(50, 181, 204);
 }
+
+#intro {
+  width: 80%;
+  height: 15vh;
+  /* background-color: orange; */
+  font: 2rem "Microsoft YaHei";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#intro>span {
+  display: block;
+}
