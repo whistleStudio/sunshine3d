@@ -2,7 +2,7 @@
 <template>
   <div id="case">
     <div id="intro"><span>解决方案</span></div>
-    <grid6 :caseImg="caseImg" />
+    <grid6 :caseImg="caseImg" :mainColor="`rgb(50, 181, 204)`"/>
   </div>
 </template>
 
@@ -31,8 +31,8 @@
 <style lang='css' scoped>
  #case {
    width: 100%;
-   height: 85vh;
-   background-color: pink;
+   height: 90vh;
+   background-color: rgb(247, 247, 247);
    display: flex;
    flex-direction: column;
    justify-content: center;

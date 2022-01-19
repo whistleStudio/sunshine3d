@@ -25,7 +25,7 @@ export default {
 <style scoped>
   #product {
     /* background-color: rgb(248, 248, 255); */
-    height: 65vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

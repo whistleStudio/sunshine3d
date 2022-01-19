@@ -38,7 +38,7 @@
     width: 22%;
     height: 100%;
     /* background-color: skyblue; */
-    border: 1px solid #f9f9f9;
+    border: 2px solid rgb(240, 240, 240);
     border-radius: 1%;
     cursor: pointer;
     box-shadow: none;

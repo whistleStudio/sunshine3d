@@ -18,14 +18,14 @@
     },
     props: {
       bannerName: String,
-      fontColor: String
+      fontColor: String,
     },
     components: {},
     computed: {
       bannerStyle: function () {
         return {
           backgroundImage: `url(${require("img/"+this.bannerName)})`,
-          "--bannerColor": this.fontColor,
+          "--bannerColor": this.fontColor
         }
       }
     }
@@ -33,6 +33,10 @@
 </script>
 
 <style lang='css' scoped>
+  /* 提供主色 */
+  * {
+    --mainColor: var(--rFontColor)
+  }
   #banner {
     width: 100%;
     height: 100vh;
@@ -63,7 +67,7 @@
     cursor: pointer;
   }
   #more:hover {
-    color: var(--rFontColor);
+    color: var(--mainColor);
     border-color: none;
     background-color: var(--bannerColor);
   }
