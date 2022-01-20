@@ -1,52 +1,7 @@
-<!-- show info with timeline -->
-<template>
-  <div id="timeline">
-    <div >
-      <ul id="line">
-        <li class='mark'>
-          <div class="dot"></div>
-          <div class="info">
-            <div>XXXXXXX</div>
-            <div>1</div>
-            <div>2021</div>
-          </div>
-          <div class="card"></div>
-        </li>
-        <li class='mark'>
-          <div ><div></div></div>
-
-        </li>
-        <li class='mark'>
-          <div ><div></div></div>
-
-        </li>
-        <li class='mark'>
-          <div ><div></div></div>
-
-        </li>
-        <li class='mark'>
-          <div><div></div></div>
-
-        </li>        
-      </ul>
-    </div>
-  </div>
-</template>
-
-<script>
-  export default {
-    data () {
-      return {
-      };
-    },
-    components: {},
-  }
-</script>
-
-<style lang='css' scoped>
   * {
-    --left1: calc((1/6)*100%);
-    --left3: calc((1/6)*100%);
+    --left1: calc((1/6)*95%);
+    --left3: calc((1/6)*95%);
+    white-space: pre-line;
   }
   #timeline {
     width: 80%;
@@ -92,16 +47,48 @@
   }
   .info {
     position: absolute;
-    width: 12vw;
+    width: 15vw;
     height: 30vh;
-    background-color: pink;
-    /* transform: translate(-50%, -100%); */
+    /* background-color: pink; */
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+  .infoTop {
     transform: translateX(calc(-50% + 0.5rem)) translateY(calc(-100% + 0.5rem));
+    justify-content: flex-end;
+  }
+  .infoBot {
+    transform: translateX(calc(-50% + 0.5rem)) translateY(calc(0.5rem));
+    justify-content: flex-start;
+  }
+  .resume {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .bTitle {
+    font-size: 3rem;
+  }
+  .sTitle {
+    font-size: 1.5rem;
+    color: gray;
+  }
+  .exLine {
+    color: rgba(128, 128, 128, 0.5);
+    font-size: 2rem;
+    font-weight: lighter;
+  }
+  .card {
+    position: absolute;
   }
 
   .mark:hover {
     animation: bigger 0.5s forwards;
   }
+
   @keyframes bigger {
     from {
       width: 1rem;
@@ -112,4 +99,3 @@
       height: 1.5rem;
     }
   }
-</style>
