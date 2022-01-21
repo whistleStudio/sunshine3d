@@ -14,6 +14,7 @@
   import H_product from "views/home/H_product"
   import H_case from "views/home/H_case"
   import H_activity from "views/home/H_activity"
+  import H_contact from "views/home/H_contact"
 
   export default {
     data () {
@@ -24,7 +25,8 @@
       "h-banner": H_banner,
       "h-product": H_product,
       "h-case": H_case,
-      "h-activity": H_activity
+      "h-activity": H_activity,
+      "h-contact": H_contact
     },
   }
 </script>

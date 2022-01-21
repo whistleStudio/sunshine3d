@@ -38,7 +38,7 @@
 
 <style lang='css' scoped>
   #activity {
-    height: 90vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
