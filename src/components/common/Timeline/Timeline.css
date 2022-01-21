@@ -3,6 +3,7 @@
     --left3: calc((1/6)*95%);
     white-space: pre-line;
   }
+
   #timeline {
     width: 80%;
     height: 65vh;
@@ -88,6 +89,9 @@
   .mark:hover {
     animation: bigger 0.5s forwards;
   }
+  .info:hover {
+    animation: turnTransparent 0.3s forwards;
+  }
 
   @keyframes bigger {
     from {
@@ -97,5 +101,13 @@
     to {
       width: 1.5rem;
       height: 1.5rem;
+    }
+  }
+  @keyframes turnTransparent {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
     }
   }

@@ -14,11 +14,11 @@
       return {
         activities: [
           {cate: 2022, info:[
-            {id: 0, sTitle: 2022, bTitle: 4, resume:"3D打印一个你的爱豆\n红豆", img: ""},
-            {id: 1, sTitle: 2022, bTitle: 3, resume:"3D打印一个你的爱豆\n黑豆", img: ""},
-            {id: 2, sTitle: 2022, bTitle: 3, resume:"3D打印一个你的爱豆\n绿豆", img: ""},
-            {id: 3, sTitle: 2022, bTitle: 2, resume:"3D打印一个你的爱豆\n黄豆", img: ""},
-            {id: 4, sTitle: 2022, bTitle: 2, resume:"3D打印一个你的爱豆\n巧克力豆", img: ""},
+            {id: 0, sTitle: 2022, bTitle: 4, resume:"3D打印一个你的爱豆\n红豆", img: "act0.jpg"},
+            {id: 1, sTitle: 2022, bTitle: 3, resume:"3D打印一个你的爱豆\n黑豆", img: "act1.jpg"},
+            {id: 2, sTitle: 2022, bTitle: 3, resume:"3D打印一个你的爱豆\n绿豆", img: "act2.jpg"},
+            {id: 3, sTitle: 2022, bTitle: 2, resume:"3D打印一个你的爱豆\n黄豆", img: "act3.jpg"},
+            {id: 4, sTitle: 2022, bTitle: 2, resume:"3D打印一个你的爱豆\n巧克力豆", img: "act4.jpg"},
           ]},
           {cate: 2021, info:[
             {id: 0, sTitle: 2021, bTitle: 4, resume:"3D打印两个个你的爱豆\n红豆红豆", img: ""},

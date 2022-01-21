@@ -12,7 +12,12 @@ ul {
 :root {
   --rFontColor: rgb(50, 181, 204);
 }
-
+.hide {
+  display: none !important;
+}
+.transparent {
+  opacity: 0 !important;
+}
 #intro {
   width: 80%;
   height: 15vh;

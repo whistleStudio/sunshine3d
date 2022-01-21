@@ -1,9 +1,9 @@
 <template>
   <div id="timeCard">
-    <!-- <img :src="picUrl"> -->
-    <div id="cardTitle">{{cardTitle}}</div>
-    <div id="date"></div>
-    <div id="more">更多</div>
+    <img :src="picUrl">
+    <div id="cardResume">{{cardResume}}</div>
+    <div id="date">{{cardDate}}</div>
+    <div id="more">+</div>
   </div>
 </template>
 
@@ -11,12 +11,12 @@
 export default {
   props: {
     cardPic: String,
-    cardTitle: String,
+    cardResume: String,
     cardDate: String
   },
   computed:{
     picUrl: function () {
-      // return require(`img/${this.cardPic}`)
+      return require(`img/${this.cardPic}`)
     }
   }
 }
@@ -26,23 +26,38 @@ export default {
   * {
     --mainColor: var(--rFontColor);
     --cardWidth: 15vw;
-    --cardHeight: 30vh;
+    --cardHeight: 32vh;
   }
   #timeCard {
     box-sizing: border-box;
-    border: 1px solid var(--mainColor);
+    border: 2px solid var(--mainColor);
     padding: 5px;
     width: var(--cardWidth);
     height: var(--cardHeight);
+    text-align: center;
+    border-radius: 0.2rem;
+    background-color: white;
   }
   img {
     width: 100%;
     height: 55%;
     background-color: #f9f9f9;
   }
-  #cardTitle {
+  #cardResume {
     height: 15%;
     text-align: center;
-    font: 1.5rem "Microsoft YaHei";
+    font: bold 1.3rem "Microsoft YaHei";
+    color: var(--mainColor);
+  }
+  #date {
+    margin-top: 1.2rem;
+  }
+  #more {
+    font-weight: bold;
+    color: white;
+    margin: 1rem auto;
+    width: 60%;
+    height: 1.3rem;
+    background-color: var(--mainColor);
   }
 </style>
