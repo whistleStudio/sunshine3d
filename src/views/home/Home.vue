@@ -6,6 +6,7 @@
     <h-product></h-product>
     <h-case></h-case>
     <h-activity></h-activity>
+    <h-contact></h-contact>
   </div>
 </template>
 
