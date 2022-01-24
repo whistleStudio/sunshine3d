@@ -2,7 +2,7 @@
 <template>
   <div id="case">
     <div id="intro"><span>解决方案</span></div>
-    <grid6 :caseImg="caseImg" :mainColor="`rgb(50, 181, 204)`"/>
+    <grid6 :caseImg="caseImg" />
   </div>
 </template>
 

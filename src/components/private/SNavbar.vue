@@ -1,7 +1,7 @@
 <!--  -->
 <template>
   <div id="SNavbar">
-    <nav-bar :navbarList="navbarList" fontColor="white" :logoSrc="logoUrl"></nav-bar>
+    <nav-bar :navbarList="navbarList" fontColor="white" :logoStyle="logoStyle"></nav-bar>
   </div>
 </template>
 
@@ -20,7 +20,10 @@
           {id: 4, val: [{id: 0, title: "商城", eng: "mall"}, {id: 1, sub: "淘宝"}, {id: 2, sub: "京东"}]},
           {id: 5, val: [{id: 0, title: "联系", eng: "contact"}]}
         ],
-        logoUrl: require("assets/logo.png")
+        logoStyle: {
+          width: "120px",
+          backgroundImage: `url(${require("assets/logo.png")})`
+        },
       };
     },
     components: {

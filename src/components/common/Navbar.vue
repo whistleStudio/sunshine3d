@@ -2,8 +2,8 @@
 <template>
   <div id="navbar">
     <div>
-      <div id="logo">
-        <img :src=logoSrc alt="" width="55px" height="55px">
+      <div id="logo" :style="logoStyle">
+        <!-- <img :src=logoSrc alt="" width="55px" height="55px"> -->
       </div>
       <div id="nav">
         <ul id="navMenu">
@@ -30,13 +30,10 @@ export default {
   props: {
     navbarList: Array,
     fontColor: String,
-    logoSrc: String
+    logoStyle: Object
   },
   components: {},
   computed: {
-    logoStyle: function () {
-      return {}
-    },
     navLiStyle: function () {
       return {"--navColor": this.fontColor}
     }
@@ -57,11 +54,10 @@ export default {
     margin: 0 auto;
   }
   #logo {
-    width: 100px;
+    width: 160px;
     height: 55px;
     float: left;
-    /* background-color: orange; */
-    height: 55px;
+    background: center/contain no-repeat;
   }
   #nav {
     float: right;

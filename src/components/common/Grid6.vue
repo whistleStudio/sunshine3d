@@ -1,6 +1,6 @@
 <!-- 6 grid display-->
 <template>
-  <div id="grid6" :style="{'--mainColor': mainColor}">
+  <div id="grid6">
     <ul id="wrapper">
       <li class="big item" :style="bigStyle"></li>
       <li class="small item">
@@ -33,8 +33,7 @@
       };
     },
     props: {
-      caseImg: Array,
-      mainColor: String
+      caseImg: Array
     },
     computed: {
       bigStyle () {
@@ -57,6 +56,10 @@
 </script>
 
 <style lang='css' scoped>
+  *{
+    --mainColor: var(--rFontColor)
+  }
+
   #grid6 {
     width: 80%;
     height: 65vh;
