@@ -1,7 +1,8 @@
 <!--  -->
 <template>
   <div id="SNavbar">
-    <nav-bar :navbarList="navbarList" fontColor="white" :logoStyle="logoStyle"></nav-bar>
+    <nav-bar :navbarList="navbarList" fontColor="white" :logoStyle="logoStyle"
+    :navStyleFlag="navStyleFlag"></nav-bar>
   </div>
 </template>
 
@@ -29,13 +30,23 @@
     components: {
       "nav-bar": Navbar
     },
+    props: {
+      navStyleFlag: Number
+    },
+    comupted:{
+      SNavBgc () {}
+    }
   }
 </script>
 
 <style lang='css' scoped>
   #SNavbar {
     position: fixed;
-    top: 2rem;
+    /* top: 2rem; */
+    box-sizing: border-box;
+    padding-top: 15px;
     width: 100%;
+    height: 85px;
+    /* background-color: orange; */
   }
 </style>

@@ -29,6 +29,10 @@
       "h-activity": H_activity,
       "h-contact": H_contact
     },
+    computed: {
+
+    },
+
   }
 </script>
 

@@ -30,12 +30,17 @@ export default {
   props: {
     navbarList: Array,
     fontColor: String,
-    logoStyle: Object
+    logoStyle: Object,
+    navStyleFlag: {
+      type: Number,
+      default: 1
+    }
   },
   components: {},
   computed: {
     navLiStyle: function () {
-      return {"--navColor": this.fontColor}
+      if (this.navStyleFlag) 
+        return {"--navColor": this.fontColor}
     }
   },
   methods: {
