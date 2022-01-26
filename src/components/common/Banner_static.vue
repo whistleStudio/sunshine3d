@@ -40,7 +40,8 @@
   #banner {
     width: 100%;
     height: 100vh;
-    background: orange center/cover no-repeat;
+    background: center/cover no-repeat;
+    /* background-color: orange; */
     box-sizing: border-box;
     display: flex;
     justify-content: center;

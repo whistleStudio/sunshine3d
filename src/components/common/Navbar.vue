@@ -7,10 +7,10 @@
       </div>
       <div id="nav">
         <ul id="navMenu">
-          <li v-for="item in navbarList" :key="item.id" :style="navLiStyle" 
+          <li v-for="item in navbarList" :key="item.id" 
           @mouseover="actTitleId=item.id">
             <span @click="toPage(item.val[0].eng)">{{item.val[0].title}}</span>
-            <ul id="navCMenu" v-if="actTitleId === item.id">
+            <ul id="navCMenu" v-if="actTitleId === item.id" :style="{backgroundColor: navCMenuBgc}">
               <li v-for="i in item.val.slice(1)" :key="i.id">{{i.sub}}</li>
             </ul>
           </li>
@@ -31,17 +31,13 @@ export default {
     navbarList: Array,
     fontColor: String,
     logoStyle: Object,
-    navStyleFlag: {
-      type: Number,
-      default: 1
-    }
+    navCMenuBgc: String
   },
   components: {},
   computed: {
-    navLiStyle: function () {
-      if (this.navStyleFlag) 
-        return {"--navColor": this.fontColor}
-    }
+    // navLiStyle () {
+    //   return {"--navColor": this.fontColor}
+    // }
   },
   methods: {
     toPage (path) {
@@ -52,6 +48,10 @@ export default {
 </script>
 
 <style lang='css' scoped>
+  /* root样式 --rFontColor */
+  * {
+    --mainColor: var(--rFontColor)
+  }
   #navbar {
     width: 90%;
     height: 55px;
@@ -70,24 +70,27 @@ export default {
     height: 55px;
   }
   #navMenu {
+    /* margin-top: 15px; */
     display: flex;
   }
   #navMenu>li {
-    font: 17px/55px sans-serif;
+    font: 1.1rem/55px "Microsoft YaHei";
     text-align: center;
-    width: 90px;
+    width: 100px;
     cursor: pointer;
-    color: var(--navColor);
+    /* color: var(--navColor); */
   }
   #navCMenu>li {
-    font: 17px/34px sans-serif;
-    border-top: 1px solid gainsboro;
+    font: 0.8rem/45px "Microsoft YaHei";
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
   }
 
   #navMenu>li>span:hover {
-    color: var(--rFontColor);
+    color: var(--mainColor);
+    font-weight: bold;
   }
   #navCMenu>li:hover {
-    color: var(--rFontColor);
+    color: var(--mainColor);
+    font-weight: bold;
   }
 </style>

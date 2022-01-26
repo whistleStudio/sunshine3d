@@ -10,14 +10,19 @@
 
   export default {
     name: 'App',
+    data () {
+      return {
+        navStyleFlag: 1
+      }
+    },
     components: {
       "s-nav-bar": SNavbar
     },
-    computed: {
-      navStyleFlag () {
-        return 1
-      }
-    },
+    // computed: {
+    //   navStyleFlag () {
+    //     return 1
+    //   }
+    // },
     methods: {
       windowScroll () {
         let s = document.documentElement.scrollTop || document.body.scrollTop

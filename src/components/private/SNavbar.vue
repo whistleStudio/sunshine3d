@@ -1,7 +1,7 @@
 <!--  -->
 <template>
-  <div id="SNavbar">
-    <nav-bar :navbarList="navbarList" fontColor="white" :logoStyle="logoStyle"
+  <div id="SNavbar" :style="SNavStyle">
+    <nav-bar :navbarList="navbarList"  :logoStyle="logoStyle" :navCMenuBgc="SNavStyle.backgroundColor"
     :navStyleFlag="navStyleFlag"></nav-bar>
   </div>
 </template>
@@ -21,10 +21,6 @@
           {id: 4, val: [{id: 0, title: "商城", eng: "mall"}, {id: 1, sub: "淘宝"}, {id: 2, sub: "京东"}]},
           {id: 5, val: [{id: 0, title: "联系", eng: "contact"}]}
         ],
-        logoStyle: {
-          width: "120px",
-          backgroundImage: `url(${require("assets/logo.png")})`
-        },
       };
     },
     components: {
@@ -33,8 +29,21 @@
     props: {
       navStyleFlag: Number
     },
-    comupted:{
-      SNavBgc () {}
+    computed:{
+      SNavStyle () {
+        if (this.navStyleFlag && this.$route.path === "/home") {
+          return {backgroundColor: "transparent", color: "white", boxShadow: "none"}
+        } else {
+          return {backgroundColor: "white", color: "black", boxShadow: "0px 1px 2px 2px ghostwhite"}
+        }
+      },
+      logoStyle () {
+        if (this.navStyleFlag && this.$route.path === "/home") {
+          return {width: "130px", backgroundImage: `url(${require("assets/logo.png")})`}
+        } else {
+          return {width: "130px", backgroundImage: `url(${require("assets/logo2.png")})`}
+        }
+      }
     }
   }
 </script>
@@ -44,9 +53,10 @@
     position: fixed;
     /* top: 2rem; */
     box-sizing: border-box;
-    padding-top: 15px;
+    padding-top: 20px;
     width: 100%;
     height: 85px;
+    z-index: 9;
     /* background-color: orange; */
   }
 </style>
