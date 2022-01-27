@@ -6,7 +6,7 @@
     <h-product></h-product>
     <h-case></h-case>
     <h-activity></h-activity>
-    <h-contact></h-contact>
+
   </div>
 </template>
 
@@ -15,7 +15,7 @@
   import H_product from "views/home/H_product"
   import H_case from "views/home/H_case"
   import H_activity from "views/home/H_activity"
-  import H_contact from "views/home/H_contact"
+
 
   export default {
     data () {
@@ -27,7 +27,6 @@
       "h-product": H_product,
       "h-case": H_case,
       "h-activity": H_activity,
-      "h-contact": H_contact
     },
     computed: {
 

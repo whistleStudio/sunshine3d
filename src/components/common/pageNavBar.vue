@@ -30,16 +30,18 @@ export default {
   }
   #pageNavBar {
     width: 100%;
-    height: 30vh;
+    height: 35vh;
+    margin-bottom: 5rem;
+    background-color: white;
   }
   #header {
     width: 100%;
-    height: calc((7/8) * 30vh);
+    height: calc((7/8) * 35vh);
     background: white center/cover no-repeat;
   }
   #nav {
     width: 100%;
-    height: calc((1/7) * 30vh);
+    height: calc((1/7) * 35vh);
     box-shadow: 0px 1px 1px 2px ghostwhite;
   }
   ul {

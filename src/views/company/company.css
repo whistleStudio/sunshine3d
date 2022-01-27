@@ -1,0 +1,81 @@
+#company {
+  background-color: rgb(247,247,247);
+}
+#company>div {
+  margin-bottom: 5rem;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+#cpyIntro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#cpyIntro>span {
+  display: block;
+}
+#cpyIntro>div {
+  width: 35%;
+  height: 30vh;
+  box-sizing: border-box;
+  border: 1px solid gainsboro;
+}
+#cpyCulture {
+  width: 35%;
+  height: 30vh;
+  margin: 0 auto;
+  /* background-color: yellow;   */
+}
+#cpyCulture>ul {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* background-color: olive; */
+}
+#cpyCulture li {
+  width: 45%;
+  height: 40%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  background-color: white;
+  padding-left: 2rem;
+}
+#cpyCulture img {
+  width: 2.5vw;
+  height: 2.5vw;
+  opacity: 0.9;
+}
+.cpyCultureContent {
+  margin-left: 2rem;
+  height: 2.5vw;
+}
+.cpyCultureContent>span {
+  display: block;
+  margin-top: 1rem;
+}
+#cpyDev>div {
+  width: 100%;
+  height: 35vh;
+  background: url("~img/company/development.jpg") center/cover no-repeat;
+}
+#cpyPartner>div {
+  margin: 0 auto;
+  width: 35%;
+  height: 35vh;
+  background: url("~img/company/partner.png") center/cover no-repeat;
+}
+#cpyGlory {
+  margin-bottom: 0 !important;
+}
+#cpyGlory>div {
+  margin: 0 auto;
+  width: 35%;
+  height: 35vh;
+  background: url("~img/company/glory.png") center/cover no-repeat;
+}

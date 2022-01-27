@@ -2,11 +2,13 @@
   <div id="app">
     <s-nav-bar :navStyleFlag="navStyleFlag"></s-nav-bar>
     <router-view></router-view>
+    <s-web-footer></s-web-footer>
   </div>
 </template>
 
 <script>
   import SNavbar from "components/private/SNavbar"
+  import SWebFooter from "components/private/SWebFooter"
 
   export default {
     name: 'App',
@@ -16,7 +18,8 @@
       }
     },
     components: {
-      "s-nav-bar": SNavbar
+      "s-nav-bar": SNavbar,
+      "s-web-footer": SWebFooter,
     },
     // computed: {
     //   navStyleFlag () {
