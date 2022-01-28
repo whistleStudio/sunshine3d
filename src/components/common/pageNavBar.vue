@@ -18,6 +18,7 @@ export default {
     }
   },
   props: {
+    /* headImg(头图banner, `url(${require("xxxx")})`):, cate：["c1", "c2", ...]*/
     headImg: String,
     cate: Array
   }
