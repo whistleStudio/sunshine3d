@@ -3,7 +3,7 @@
     <div id="header" :style="{backgroundImage: headImg}"></div>
     <div id="nav">
       <ul>
-        <li v-for="(v, i) in cate" :key="i"><span>{{v}}</span></li>
+        <li v-for="(v, i) in cate" :key="i" @click="actCate(i)"><span>{{v}}</span></li>
       </ul>
     </div>
   </div>
@@ -21,6 +21,11 @@ export default {
     /* headImg(头图banner, `url(${require("xxxx")})`):, cate：["c1", "c2", ...]*/
     headImg: String,
     cate: Array
+  },
+  methods: {
+    actCate (i) {
+      this.$emit('cateclick', i)
+    }
   }
 }
 </script>
