@@ -11,9 +11,11 @@
       </ul>
       <div id="pNavBtn">
         <ul>
-          <li>&lt;</li>
-          <li></li>
-          <li>&gt;</li>
+          <li @click="changePage(-1)">&lt;</li>
+          <li v-for="(v, i) in Array(curPages)" :key="i"
+          @click="selectPage(i)" :class="{btnActive: curSelectPage == i}"
+          >{{i+1}}</li>
+          <li @click="changePage(1)">&gt;</li>
         </ul> 
       </div>
     </div>
@@ -61,17 +63,49 @@
             {name: "其他", img: "", msg: "description"},
             {name: "其他", img: "", msg: "description"},
           ]},
-        ]
+        ],
+        curSelectPage: 0,
       };
     },
     components: {
       "page-nav-bar": PageNavBar
     },
+    computed: {
+      a:function () {return 1},
+      totals: function () {
+        let tL = 0
+        for(let v of this.pData) {
+          tL += v.v.length
+        }
+        return tL
+      },
+      curPages: function () {
+        return Math.ceil(this.totals / 12)
+      }
+    },
     methods: {
       changeContent (i) {
         this.actCateIdx = i-1
-        console.log(i)
+        if (i == 0) {
+          this.curTotals = this.totals
+        } else {
+          this.curTotals = this.pData[i-1].v.length
+        }
+      },
+      selectPage (i) {
+        this.curSelectPage = i
+      },
+      changePage (i) {
+        if (i === -1 && this.curSelectPage !== 0) {
+          this.curSelectPage --
+        }
+        if (i === 1 && this.curSelectPage !== this.curPages-1) {
+          this.curSelectPage ++
+        }
       }
+    },
+    mounted () {
+      // console.log(this.curPages)
     }
   }
 </script>
@@ -108,19 +142,23 @@
   #pNavBtn li {
     margin-left: 0.2rem;
     margin-right: 0.2rem;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     box-sizing: border-box;
     border: 1px solid gainsboro;
     border-radius: 3px;
-    font: 1.5rem/2.5rem "Microsoft YaHei";
+    font: 1.2rem/2rem "Microsoft YaHei";
     text-align: center;
     cursor: pointer;
     color: gray;
   }
+  .btnActive {
+    color: white !important;
+    background-color: var(--rFontColor);
+  }
 
   #pNavBtn li:hover {
     color: var(--rFontColor);
-    font-weight: bold;
+    /* font-weight: bold; */
   }
 </style>
