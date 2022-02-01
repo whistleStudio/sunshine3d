@@ -3,11 +3,25 @@
   <div id="product">
     <page-nav-bar :headImg="headImgSrc" :cate="cateData"  @cateclick="changeContent"></page-nav-bar>
     <div>
-      <ul id="pItems">
+      <ul id="pItems" v-if="actCateIdx != -1">
         <li v-for="(v, i) in pData[actCateIdx].v" :key="i">
           <img src="" alt="">
           <span>{{v.name}}</span>
+        </li>=
+      </ul>
+      <ul id="pItems" v-else>
+        <li v-for="(v, i) in pData[0].v" :key="i">
+          <img src="" alt="">
+          <span>{{v.name}}</span>
         </li>
+        <li v-for="(v, i) in pData[1].v" :key="i+100">
+          <img src="" alt="">
+          <span>{{v.name}}</span>
+        </li>
+        <li v-for="(v, i) in pData[2].v" :key="i+1000">
+          <img src="" alt="">
+          <span>{{v.name}}</span>
+        </li>                        
       </ul>
       <div id="pNavBtn">
         <ul>
@@ -65,13 +79,13 @@
           ]},
         ],
         curSelectPage: 0,
+
       };
     },
     components: {
       "page-nav-bar": PageNavBar
     },
     computed: {
-      a:function () {return 1},
       totals: function () {
         let tL = 0
         for(let v of this.pData) {
@@ -80,17 +94,20 @@
         return tL
       },
       curPages: function () {
-        return Math.ceil(this.totals / 12)
+        return Math.ceil(this.curTotals / 12)
+      },
+      curTotals: function () {
+        if (this.actCateIdx == -1) {
+          return this.totals
+        } else {
+          return this.pData[this.actCateIdx].v.length
+        }
       }
     },
     methods: {
       changeContent (i) {
         this.actCateIdx = i-1
-        if (i == 0) {
-          this.curTotals = this.totals
-        } else {
-          this.curTotals = this.pData[i-1].v.length
-        }
+
       },
       selectPage (i) {
         this.curSelectPage = i
@@ -105,7 +122,7 @@
       }
     },
     mounted () {
-      // console.log(this.curPages)
+      console.log(this.actCateIdx)
     }
   }
 </script>
