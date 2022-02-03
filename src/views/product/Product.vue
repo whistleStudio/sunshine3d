@@ -4,13 +4,14 @@
     <page-nav-bar :headImg="headImgSrc" :cate="cateData"  @cateclick="changeContent"></page-nav-bar>
     <div>
       <ul id="pItems" v-if="actCateIdx != -1">
-        <li v-for="(v, i) in pData[actCateIdx].v.slice(pStart, pEnd)" :key="i">
+        <li v-for="(v, i) in pData[actCateIdx].v.slice(pStart, pEnd)" :key="i" @mouseover="triggerHover(i)"  @mouseout="removeHover(i)">
           <img :src="v.img" alt="">
           <span>{{v.name}}</span>
+          <div class="resume">{{v.msg}}</div>
         </li>
       </ul>
       <ul id="pItems" v-else>
-        <li v-for="(v, i) in totals.slice(pStart, pEnd)" :key="i">
+        <li v-for="(v, i) in totals.slice(pStart, pEnd)" :key="i" @mouseover="triggerHover(i)"  @mouseout="removeHover(i)">
           <img :src="v.img" alt="">
           <span>{{v.name}}</span>
           <div class="resume">{{v.msg}}</div>
@@ -133,6 +134,14 @@
         }
         this.pStart = this.curSelectPage * 12
         this.pEnd = (this.curSelectPage+1) * 12
+      },
+      triggerHover (i) {
+        let idx = i%12
+        document.querySelectorAll(".resume")[idx].classList.add("resumeHover")
+      },
+      removeHover (i) {
+         let idx = i%12
+        document.querySelectorAll(".resume")[idx].classList.remove("resumeHover")
       }
     },
     mounted () {
@@ -185,6 +194,9 @@
     background-color: var(--rFontColorA);
     opacity: 1;
   }
+  .resumeHover {
+    animation: popup 0.6s forwards;
+  }
   #pNavBtn {
     margin-bottom: 3rem;
   }
@@ -217,14 +229,14 @@
   #pItems>li:hover {
     animation: highligh 0.5s forwards;
   }
-  .resume:hover {
+  /* .resume:hover {
     animation: popup 0.6s forwards;
-  }
+  } */
   @keyframes highligh {
-    from {box-shadow: none; --top: 14vw}
-    to {box-shadow: 1px 1px 1px 2px gainsboro; --top: 0}
+    0% {box-shadow: none; }
+    100% {box-shadow: 1px 1px 1px 2px gainsboro; }
   }
-  /* @keyframes popup {
+  @keyframes popup {
     from {
       opacity: 1;
       top: 14vw;
@@ -233,5 +245,5 @@
       opacity: 1;
       top: 0;
     }
-  } */
+  }
 </style>
