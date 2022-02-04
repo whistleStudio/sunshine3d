@@ -36,7 +36,7 @@
     },
     created () {
       this.pData = productData.pData
-      console.log(this.pData)
+      // console.log(this.pData)
     }
   }
 </script>
