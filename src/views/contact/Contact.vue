@@ -11,9 +11,16 @@
         <div id="cSend">
           <div>留言给我们:</div>
           <div>
-            <input type="text">
-            <input type="text">
-            <input type="text">
+            <div><input type="text"></div>
+            <div>
+              <select name="" id="">
+                <option disabled value="">问题分类</option>
+                <option v-for="(v,i) in ['产品咨询','技术支持', '商务合作', '其他']" :key="i">{{v}}</option>
+              </select>
+              <input type="text">
+            </div>
+            <div><input type="text"> <input type="text"></div>
+            <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
           </div>
         </div>
       </div>
