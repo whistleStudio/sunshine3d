@@ -1,23 +1,23 @@
 {
   "pData": [
     {"id": 1, "v": [
-      {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-      {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-      {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-      {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-      {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-      {"name": "PLA","img": "product/f2.jpg", "msg": "description"}
+      {"name": "PLA","img": "activity/act0.jpg", "msg": "description"},
+      {"name": "PLA","img": "activity/act0.jpg", "msg": "description"},
+      {"name": "PLA","img": "activity/act0.jpg", "msg": "description"},
+      {"name": "PLA","img": "activity/act0.jpg", "msg": "description"},
+      {"name": "PLA","img": "activity/act0.jpg", "msg": "description"},
+      {"name": "PLA","img": "activity/act0.jpg", "msg": "description"}
 
     ]},
     {"id": 2, "v": [
-      {"name": "树脂", "img": "product/r0.png", "msg": "description"},
-      {"name": "树脂", "img": "product/r0.png", "msg": "description"},
-      {"name": "树脂", "img": "product/r0.png", "msg": "description"}
+      {"name": "树脂", "img": "activity/act1.jpg", "msg": "description"},
+      {"name": "树脂", "img": "activity/act1.jpg", "msg": "description"},
+      {"name": "树脂", "img": "activity/act1.jpg", "msg": "description"}
     ]},
     {"id": 3, "v": [
-      {"name": "其他", "img": "product/p0.jpg", "msg": "description"},
-      {"name": "其他", "img": "product/p0.jpg", "msg": "description"},
-      {"name": "其他", "img": "product/p0.jpg", "msg": "description"}
+      {"name": "其他", "img": "activity/act3.jpg", "msg": "description"},
+      {"name": "其他", "img": "activity/act3.jpg", "msg": "description"},
+      {"name": "其他", "img": "activity/act3.jpg", "msg": "description"}
     ]}
   ]
 }
