@@ -10,8 +10,8 @@ ul {
 }
 
 :root {
-  --rFontColor: rgb(23, 73, 178);
-  --rFontColorA: rgba(23, 73, 178, 0.8);
+  --rFontColor: rgb(86, 187, 199);
+  --rFontColorA: rgba(86, 187, 199, 0.8);
 }
 .hide {
   display: none !important;

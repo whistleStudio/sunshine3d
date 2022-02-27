@@ -17,9 +17,9 @@
           {id: 0, val: [{id: 0, title: "主页", eng: "home"}]},
           {id: 1, val: [{id: 0, title: "公司", eng: "company"}]},
           {id: 2, val: [{id: 0, title: "产品", eng: "product"}, {id: 1, sub: "PLA"}, {id: 2, sub: "ABS"}, {id: 3, sub: "TPU"}]},
-          {id: 3, val: [{id: 0, title: "动态", eng: "activity"}]},
-          {id: 4, val: [{id: 0, title: "商城", eng: "mall"}, {id: 1, sub: "淘宝"}, {id: 2, sub: "京东"}]},
-          {id: 5, val: [{id: 0, title: "联系", eng: "contact"}]}
+          {id: 3, val: [{id: 0, title: "新闻", eng: "activity"}]},
+          // {id: 4, val: [{id: 0, title: "商城", eng: "mall"}, {id: 1, sub: "淘宝"}, {id: 2, sub: "京东"}]},
+          {id: 4, val: [{id: 0, title: "联系", eng: "contact"}]}
         ],
       };
     },

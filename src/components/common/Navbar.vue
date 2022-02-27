@@ -53,10 +53,15 @@ export default {
     --mainColor: var(--rFontColor)
   }
   #navbar {
-    width: 90%;
+    width: 100%;
     height: 55px;
     /* background-color: pink; */
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  #navbar>div {
+    width: 80%;
   }
   #logo {
     width: 160px;
@@ -74,14 +79,15 @@ export default {
     display: flex;
   }
   #navMenu>li {
-    font: 1.1rem/55px "Microsoft YaHei";
+    font: 1.3rem/55px "Microsoft YaHei";
     text-align: center;
-    width: 100px;
+    /* width: 100px; */
+    margin-left: 60px;
     cursor: pointer;
     /* color: var(--navColor); */
   }
   #navCMenu>li {
-    font: 0.8rem/45px "Microsoft YaHei";
+    font: 1rem/45px "Microsoft YaHei";
     border-top: 1px solid rgba(255, 255, 255, 0.5);
   }
 
