@@ -17,3 +17,8 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+
+version description
+[03012251] 添加了h-nav-list; 新建了carousel组件

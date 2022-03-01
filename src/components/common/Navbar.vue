@@ -79,7 +79,8 @@ export default {
     display: flex;
   }
   #navMenu>li {
-    font: 1.3rem/55px "Microsoft YaHei";
+    color: rgb(100,100,100);
+    font: bold 1.3rem/55px "Microsoft YaHei";
     text-align: center;
     /* width: 100px; */
     margin-left: 60px;
@@ -87,7 +88,7 @@ export default {
     /* color: var(--navColor); */
   }
   #navCMenu>li {
-    font: 1rem/45px "Microsoft YaHei";
+    font: 0.8rem/45px "Microsoft YaHei";
     border-top: 1px solid rgba(255, 255, 255, 0.5);
   }
 

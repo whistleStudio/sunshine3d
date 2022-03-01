@@ -16,7 +16,7 @@
         navbarList:[
           {id: 0, val: [{id: 0, title: "主页", eng: "home"}]},
           {id: 1, val: [{id: 0, title: "公司", eng: "company"}]},
-          {id: 2, val: [{id: 0, title: "产品", eng: "product"}, {id: 1, sub: "PLA"}, {id: 2, sub: "ABS"}, {id: 3, sub: "TPU"}]},
+          {id: 2, val: [{id: 0, title: "产品", eng: "product"}]},
           {id: 3, val: [{id: 0, title: "新闻", eng: "activity"}]},
           // {id: 4, val: [{id: 0, title: "商城", eng: "mall"}, {id: 1, sub: "淘宝"}, {id: 2, sub: "京东"}]},
           {id: 4, val: [{id: 0, title: "联系", eng: "contact"}]}
@@ -32,14 +32,14 @@
     computed:{
       SNavStyle () {
         if (this.navStyleFlag && this.$route.path === "/home") {
-          return {backgroundColor: "transparent", color: "white", boxShadow: "none"}
+          return {backgroundColor: "white", color: "black", boxShadow: "none"}
         } else {
           return {backgroundColor: "white", color: "black", boxShadow: "0px 1px 2px 2px ghostwhite"}
         }
       },
       logoStyle () {
         if (this.navStyleFlag && this.$route.path === "/home") {
-          return {width: "130px", backgroundImage: `url(${require("assets/logo.png")})`}
+          return {width: "130px", backgroundImage: `url(${require("assets/logo2.png")})`}
         } else {
           return {width: "130px", backgroundImage: `url(${require("assets/logo2.png")})`}
         }

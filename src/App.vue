@@ -8,6 +8,7 @@
 
 <script>
   import SNavbar from "components/private/SNavbar"
+
   import SWebFooter from "components/private/SWebFooter"
 
   export default {
@@ -20,6 +21,7 @@
     components: {
       "s-nav-bar": SNavbar,
       "s-web-footer": SWebFooter,
+
     },
     // computed: {
     //   navStyleFlag () {
