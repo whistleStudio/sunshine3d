@@ -1,6 +1,6 @@
 <!-- home>banner -->
 <template>
-  <div>
+  <div >
     <banner :banner-name="bannerName" :font-color="fontColor" />
   </div>
 </template>

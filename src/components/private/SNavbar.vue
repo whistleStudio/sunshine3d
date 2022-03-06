@@ -55,7 +55,7 @@
     box-sizing: border-box;
     padding-top: 20px;
     width: 100%;
-    height: 85px;
+    height: 95px;
     z-index: 9;
     /* background-color: orange; */
   }
