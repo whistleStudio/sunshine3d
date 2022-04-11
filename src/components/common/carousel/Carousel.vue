@@ -1,7 +1,8 @@
 <template>
   <div id="carousel">
     <ul>
-      <li class="showItem"></li>
+      <li v-for="(v, i) in imgLink" :key="i" :style="{backgroundImage: `url(${require('img'+v)})`}" 
+      class="showItem"></li>
     </ul>
     <div id="swapBtn">
         <span>&lt;</span>
@@ -12,7 +13,12 @@
 
 <script>
 export default {
-
+  data () {
+    return {}
+  },
+  props: {
+    imgLink: Array
+  }
 }
 </script>
 
@@ -22,19 +28,19 @@ export default {
   height: 100%;
   background-color: cadetblue;
   position: relative;
+  overflow: hidden;
 }
 #carousel>ul {
   width: 100%;
   height: 100%;
   display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .showItem {
   width: 100%;
   height: 100%;
   flex: none;
-  background-color: yellow;
-  background: url("~img/carousel/m1.jpg") center/cover no-repeat;
+  background: white center/cover no-repeat;
 }
 #swapBtn {
   width: 100%;

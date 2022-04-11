@@ -2,7 +2,7 @@
 <div id="Hcarousel">
     <h-nav-list />
     <div>
-      <carousel />
+      <carousel :imgLink="carouselImg" />
     </div>
 </div>
 
@@ -15,7 +15,11 @@ const H_navlist = ()=>import("views/home/H_navlist")
 export default {
   data () {
     return {
-
+        carouselImg: [
+          "/carousel/m1.jpg",
+          "/carousel/m1.jpg",
+          "/carousel/m1.jpg"
+        ]
     }
   },
   components: {
