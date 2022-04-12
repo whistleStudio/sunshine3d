@@ -1,2 +1,2 @@
-let a = [1, 2]
-console.log(a[a.length-1])
+let a = -5 % -100
+console.log(a);

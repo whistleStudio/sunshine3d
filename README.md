@@ -25,3 +25,5 @@ version description
 添加了h-nav-list; 新建了carousel组件
 ### [04112200]
 重温了下，还是在做轮播图，太晚了；要练琴了
+### [04112342]
+轮播图 连起来了，ease, 还差停留
