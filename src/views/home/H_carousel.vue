@@ -17,7 +17,7 @@ export default {
     return {
         carouselImg: [
           'carousel/m1.jpg',
-          'carousel/m1.jpg',
+          'carousel/m2.jpg',
           'carousel/m1.jpg'
         ]
     }

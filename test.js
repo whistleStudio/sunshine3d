@@ -1,2 +1,2 @@
-let a = -5 % -100
+let a = -500 / -100
 console.log(a);

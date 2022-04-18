@@ -10,13 +10,13 @@
           <li v-for="item in navbarList" :key="item.id" 
           @mouseover="actTitleId=item.id">
             <span @click="toPage(item.val[0].eng)">{{item.val[0].title}}</span>
-            <ul id="navCMenu" v-if="actTitleId === item.id" :style="{backgroundColor: navCMenuBgc}">
-              <li v-for="i in item.val.slice(1)" :key="i.id">{{i.sub}}</li>
-            </ul>
           </li>
         </ul>
       </div>
     </div>
+    <ul v-show="actTitleId==2" class="navCMenu">
+      <li></li>
+    </ul>
   </div>
 </template>
 
@@ -59,6 +59,7 @@ export default {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    position: relative;
   }
   #navbar>div {
     width: 80%;
@@ -87,17 +88,16 @@ export default {
     cursor: pointer;
     /* color: var(--navColor); */
   }
-  #navCMenu>li {
-    font: 0.8rem/45px "Microsoft YaHei";
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-  }
-
   #navMenu>li>span:hover {
     color: var(--mainColor);
     font-weight: bold;
   }
-  #navCMenu>li:hover {
-    color: var(--mainColor);
-    font-weight: bold;
+  .navCMenu {
+    position: absolute;
+    top: 55px;
+    width: 80%;
+    height: 200px;
+    background-color: olive;
   }
+
 </style>

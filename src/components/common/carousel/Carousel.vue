@@ -1,12 +1,12 @@
 <template>
   <div id="carousel">
-    <ul ref="carouselUl">
+    <ul ref="carouselUl" @mouseenter="startFlag=0" @mouseleave="startFlag=1">
       <li ref="carouselLi" v-for="(v, i) in imgLink" :key="i" :style="{backgroundImage: `url(${require('img/'+v)})`}" 
       class="showItem"></li>
     </ul>
     <div id="swapBtn">
-        <span>&lt;</span>
-        <span>&gt;</span>
+        <span  @click="actChange(0)">&lt;</span>
+        <span  @click="actChange(1)">&gt;</span>
     </div>
   </div>
 </template>
@@ -15,7 +15,7 @@
 export default {
   data () {
     return {
-      tim: 0,
+      tim: 0, startFlag: 1,
       pos: 0
     }
   },
@@ -31,31 +31,39 @@ export default {
   methods: {
     scrollImg () {
       // 步长，间隔，停留时间
-      let step = 0.2, inv=10, stopTime = 3000, flag=1, count=0
+      let step = 0.2, inv=10, stopTime = 3000
+      let flag=1, count=0
       this.tim = setInterval(()=>{
-        // console.log(this.ulWidth)
-        this.$refs.carouselUl.style.left = this.pos + '%'
-        if (this.pos <= -200) this.pos = 0
         if (flag) {
           this.pos -= step
           let pp = this.pos%-100
-          // console.log(this.pos%-100, "---", step)
           if (pp>=-5) step+=0.03
           if (pp<=-95) step-=0.03          
+
+          if (pp<=-99) {
+            flag = 0
+            this.pos = (parseInt(this.pos/-100)+1)*-100
+          }
+        } else {
+          count += 1
+          if (count >= (stopTime/inv)&&this.startFlag) {
+            flag = 1
+            count = 0
+          }
         }
-        // if (pp>=-1) {
-        //   flag = 0
-        //   this.pos = parseInt(this.pos/-100)*-100
-        //   count += 1
-        //   if (count >= (stopTime/inv)) {
-        //     flag = 1
-        //   }
-        // }
+        if (this.pos <= -100*(this.imgL-1)) {this.pos = 0; step = 0.2}
+        if (this.pos > 0) {this.pos = -100*(this.imgL-2); step = 0.2}
+        this.$refs.carouselUl.style.left = this.pos + '%'
       }, inv)
+    },
+    /* 左右切换 */
+    actChange (i) {
+      let change = i ? 100 : -100
+      this.pos += change
     }
   },
   mounted () {
-    this.scrollImg()
+    setTimeout(()=>{this.scrollImg()},3000)
   }
 }
 </script>
@@ -76,6 +84,9 @@ export default {
   top: 0;
   left: 0;
   /* overflow: hidden; */
+}
+#carousel>ul>li {
+  cursor: pointer;
 }
 .showItem {
   width: 100%;
