@@ -14,8 +14,11 @@
         </ul>
       </div>
     </div>
-    <ul v-show="actTitleId==2" class="navCMenu">
-      <li></li>
+    <ul v-if="navbarList[actTitleId]&&navbarList[actTitleId].cmenu" class="navCMenu">
+      <li v-for="(v,i) in navbarList[actTitleId].cmenu" :key="i" class="cMenuLi">
+        <h3>{{v.cate}}</h3>
+        <span v-for="(cv, ci) in v.v" :key="ci" >{{cv}}</span>
+      </li>
     </ul>
   </div>
 </template>
@@ -48,10 +51,7 @@ export default {
 </script>
 
 <style lang='css' scoped>
-  /* root样式 --rFontColor */
-  * {
-    --mainColor: var(--rFontColor)
-  }
+  /* root样式 需要rFontColor*/
   #navbar {
     width: 100%;
     height: 55px;
@@ -89,7 +89,7 @@ export default {
     /* color: var(--navColor); */
   }
   #navMenu>li>span:hover {
-    color: var(--mainColor);
+    color: var(--rFontColor);
     font-weight: bold;
   }
   .navCMenu {
@@ -97,7 +97,38 @@ export default {
     top: 55px;
     width: 80%;
     height: 200px;
-    background-color: olive;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-top: 1px solid ghostwhite;
+    border-bottom: 1px solid gainsboro;
+  }
+  .cMenuLi {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    border-right: 2px solid var(--rFontColorAA);
+  }
+  .cMenuLi:last-of-type {
+    border-right: none;
+  }
+  .cMenuLi>h3 {
+    color: rgb(100,100,100);
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+  .cMenuLi>span {
+    color: rgb(125,125,125);
+    margin-bottom: 0.3rem;
+    cursor: pointer;
+  }
+  .cMenuLi>span:hover {
+    color: var(--rFontColorA);
+    font-weight: bold;
   }
 
 </style>
