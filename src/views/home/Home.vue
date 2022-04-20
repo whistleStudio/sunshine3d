@@ -2,8 +2,6 @@
 <template>
   <div id="home">
     <h-carousel />
-    <h-product /> 
-    <h-case />
     <h-activity />
 
   </div>

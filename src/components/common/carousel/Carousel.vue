@@ -34,6 +34,7 @@ export default {
       let step = 0.2, inv=10, stopTime = 3000
       let flag=1, count=0
       this.tim = setInterval(()=>{
+        console.log(this.tim)
         if (flag) {
           this.pos -= step
           let pp = this.pos%-100
@@ -63,7 +64,11 @@ export default {
     }
   },
   mounted () {
-    setTimeout(()=>{this.scrollImg()},3000)
+    this.tim = setTimeout(()=>{this.scrollImg()},3000)
+  },
+  beforeDestroy () {
+    //3s以内clear timeout；以外 interval
+    clearInterval(this.tim)
   }
 }
 </script>
