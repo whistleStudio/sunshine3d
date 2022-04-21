@@ -1,27 +1,45 @@
 {
   "pData": [
-    [
-      {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-      {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-      {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-      {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-      {"name": "PLA","img": "product/f2.jpg", "msg": "description"}
-    ],
-    [
-      {"name": "树脂", "img": "product/r0.png", "msg": "description"},
-      {"name": "树脂", "img": "product/r0.png", "msg": "description"},
-      {"name": "树脂", "img": "product/r0.png", "msg": "description"},
-      {"name": "树脂", "img": "product/r0.png", "msg": "description"},
-      {"name": "树脂", "img": "product/r0.png", "msg": "description"},
-      {"name": "树脂", "img": "product/r0.png", "msg": "description"},
-      {"name": "树脂", "img": "product/r0.png", "msg": "description"},
-      {"name": "树脂", "img": "product/r0.png", "msg": "description"},
-      {"name": "树脂", "img": "product/r0.png", "msg": "description"}
-    ],
-    [
-      {"name": "其他", "img": "product/p0.jpg", "msg": "description"},
-      {"name": "其他", "img": "product/p0.jpg", "msg": "description"},
-      {"name": "其他", "img": "product/p0.jpg", "msg": "description"}
-    ]
+    {
+      "cate": "通用级材料",
+      "v": [
+        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
+        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
+        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
+        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
+        {"name": "PLA","img": "product/f2.jpg", "msg": "description"}
+      ]
+    },
+    {
+      "cate": "柔性材料",
+      "v": [
+        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
+        {"name": "PLA","img": "product/f2.jpg", "msg": "description"}
+      ]
+    },
+    {
+      "cate": "工业级材料",
+      "v": [
+        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
+        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
+        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
+        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
+        {"name": "PLA","img": "product/f2.jpg", "msg": "description"}
+      ]
+    },
+    {
+      "cate": "支撑材料",
+      "v": [
+        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
+        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
+        {"name": "PLA","img": "product/f2.jpg", "msg": "description"}
+      ]
+    },
+    {
+      "cate": "辅助工具",
+      "v": [
+        {"name": "PLA","img": "product/f2.jpg", "msg": "description"}
+      ]
+    }
   ]
 }

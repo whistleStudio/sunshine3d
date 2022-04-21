@@ -37,3 +37,7 @@ version description
 嵌套的组件有点多，略蠢
 ### [04202208]
 缓慢推进了点
+### [04211726]
+product页面 商品展示排列
+`.proCate>ul>li:not(:nth-of-type(4n))` 给定margin-right 解决最后一行排列问题
+hover效果也做了些，比上次写得轻松多了

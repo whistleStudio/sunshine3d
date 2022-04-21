@@ -3,12 +3,16 @@
   <div id="product">
     <page-nav-bar :headImg="headImgSrc" :cate="cateData"></page-nav-bar>
     <div id="main">
-      <div class="proCate">
-        <div class="cateName"><span>通用级材料</span></div>
+      <div v-for="(v,i) in pData" :key="i" class="proCate">
+        <div class="cateName"><span>{{v.cate}}</span></div>
         <ul>
-          <li v-for="(v,i) in pData[0]" :key="i">
-            <div class="proImg"></div>
-            <span></span>
+          <li v-for="(pv,pi) in v.v" :key="pi" 
+          @mouseenter="actProIdx=10*i+pi" @mouseleave="actProIdx=-1"> 
+            <div class="proImg" :style="{backgroundImage: `url(${require('img/'+pv.img)})`}"></div>
+            <span class="proName">{{pv.name}}</span>
+            <div :class="{proLiHover: actProIdx==(10*i+pi)}">
+              <span>{{pv.msg}}</span>
+            </div>
           </li>
         </ul>
       </div>
@@ -24,9 +28,18 @@
     data () {
       return {
         headImgSrc: `url(${require("img/product/header.jpg")})`,
-        cateData: ["通用级材料", "柔性材料", "工业级材料", "支撑材料", "辅助工具"],
-        pData
+        pData,
+        actProIdx: -1,
       };
+    },
+    computed: {
+      cateData: function () {
+        let list = []
+        pData.forEach(e => {
+          list.push(e.cate)
+        })
+        return list
+      }
     },
     components: {
       "page-nav-bar": PageNavBar,
@@ -50,44 +63,73 @@
     flex-direction: column;
     align-items: center;
   }
-  ::v-deep #pItems {
-    width: 60vw;
-    height: 45vw;
-    --pItemsLiW: 14vw;
-    --pItemsLiH: 14vw;
-    --pItemsImgW: 13vw;
-    --pItemsImgH: 13vw;    
-  }
   #main {
     width: 60vw;
   }
   .cateName {
     width: 60vw;
     height: 30px;
-    border-bottom: 2px solid var(--rFontColorA);
+    border-bottom: 2px solid var(--rFontColor);
     box-sizing: border-box;
     position: relative;
   }
   .cateName>span {
     padding: 5px;
     color: white;
-    background-color: var(--rFontColorA);
+    background-color: var(--rFontColor);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     position: absolute;
     bottom: 0;
+    font-size: 1.2rem;
+  }
+  .proCate {
+    margin-bottom: 3vw;
   }
   .proCate>ul {
     width: 60vw;
     display: flex;
-    word-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .proCate>ul>li {
-    flex: 0;
+    flex: none;
     width: 14vw;
-    height: 15vw;
-    border: 1px solid gray;
-    background-color: yellow;
+    height: 16vw;
+    background-color: ghostwhite;
+    box-sizing: border-box;
+    margin-top: calc(4vw / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5vw;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+  }
+  .proCate>ul>li:not(:nth-of-type(4n)) {
+    margin-right: calc(4vw / 3);
+  }
+  .proImg {
+    width: 13vw;
+    height: 13vw;
+    background: center/cover no-repeat;
+  }
+  .proName {
+    display: inline-block;
+    height: 2vw;
+    line-height: 2vw;
+    font-size: 1.2rem;
+  }
+  .proLiHover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--rFontColorA);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 </style>
