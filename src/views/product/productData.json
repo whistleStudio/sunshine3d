@@ -3,42 +3,42 @@
     {
       "cate": "通用级材料",
       "v": [
-        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-        {"name": "PLA","img": "product/f2.jpg", "msg": "description"}
+        {"name": "PETG","img": "product/f2.jpg", "msg": "description"},
+        {"name": "Tough-PETG","img": "product/f2.jpg", "msg": "description"},
+        {"name": "PETG-CF","img": "product/f2.jpg", "msg": "description"},
+        {"name": "Ordorless-ABS","img": "product/f2.jpg", "msg": "description"},
+        {"name": "ASA","img": "product/f2.jpg", "msg": "description"}
       ]
     },
     {
       "cate": "柔性材料",
       "v": [
-        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-        {"name": "PLA","img": "product/f2.jpg", "msg": "description"}
+        {"name": "TPU","img": "product/f2.jpg", "msg": "description"},
+        {"name": "TPU-Foam","img": "product/f2.jpg", "msg": "description"}
       ]
     },
     {
       "cate": "工业级材料",
       "v": [
-        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-        {"name": "PLA","img": "product/f2.jpg", "msg": "description"}
+        {"name": "PETG-ESD","img": "product/f2.jpg", "msg": "description"},
+        {"name": "UltraPA","img": "product/f2.jpg", "msg": "description"},
+        {"name": "EasePA12-CF","img": "product/f2.jpg", "msg": "description"},
+        {"name": "UltraPA-GF","img": "product/f2.jpg", "msg": "description"},
+        {"name": "UltraPA-CF","img": "product/f2.jpg", "msg": "description"}
       ]
     },
     {
       "cate": "支撑材料",
       "v": [
-        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-        {"name": "PLA","img": "product/f2.jpg", "msg": "description"},
-        {"name": "PLA","img": "product/f2.jpg", "msg": "description"}
+        {"name": "S-Green","img": "product/f2.jpg", "msg": "description"},
+        {"name": "S-Purple","img": "product/f2.jpg", "msg": "description"},
+        {"name": "S-Blue","img": "product/f2.jpg", "msg": "description"}
       ]
     },
     {
       "cate": "辅助工具",
       "v": [
-        {"name": "PLA","img": "product/f2.jpg", "msg": "description"}
+        {"name": "FusDry","img": "product/f2.jpg", "msg": "description"}
       ]
     }
   ]

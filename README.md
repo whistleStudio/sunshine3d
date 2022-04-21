@@ -41,3 +41,6 @@ version description
 product页面 商品展示排列
 `.proCate>ul>li:not(:nth-of-type(4n))` 给定margin-right 解决最后一行排列问题
 hover效果也做了些，比上次写得轻松多了
+### [04212149]
+productData调整了下结构
+product/details

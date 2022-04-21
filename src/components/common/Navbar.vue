@@ -14,7 +14,7 @@
         </ul>
       </div>
     </div>
-    <ul v-if="navbarList[actTitleId]&&navbarList[actTitleId].cmenu" class="navCMenu">
+    <ul v-if="navbarList[actTitleId]&&navbarList[actTitleId].cmenu"  @mouseleave="actTitleId=-1" class="navCMenu">
       <li v-for="(v,i) in navbarList[actTitleId].cmenu" :key="i" class="cMenuLi">
         <h3>{{v.cate}}</h3>
         <span v-for="(cv, ci) in v.v" :key="ci" >{{cv}}</span>

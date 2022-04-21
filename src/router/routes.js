@@ -2,8 +2,8 @@ const Home = () => import("views/home/Home")
 const Company = () => import("views/company/Company")
 const Product = () => import("views/product/Product")
 const Activity = () => import("views/activity/Activity")
-const Mall = () => import("views/mall/Mall")
 const Contact = () => import("views/contact/Contact")
+const Details = () => import("views/details/Details")
 
 const routes = [
   {
@@ -23,12 +23,12 @@ const routes = [
     component: Product
   },
   {
-    path: "/activity",
-    component: Activity
+    path: "/product/details",
+    component: Details
   },
   {
-    path: "/mall",
-    component: Mall
+    path: "/activity",
+    component: Activity
   },
   {
     path: "/contact",
