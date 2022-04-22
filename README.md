@@ -44,3 +44,5 @@ hover效果也做了些，比上次写得轻松多了
 ### [04212149]
 productData调整了下结构
 product/details
+### [04211704]
+details单个页面布局OK
