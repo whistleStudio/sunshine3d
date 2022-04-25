@@ -34,7 +34,6 @@ export default {
       let step = 0.2, inv=10, stopTime = 3000
       let flag=1, count=0
       this.tim = setInterval(()=>{
-        console.log(this.tim)
         if (flag) {
           this.pos -= step
           let pp = this.pos%-100

@@ -3,42 +3,42 @@
     {
       "cate": "通用级材料",
       "v": [
-        {"name": "PETG","img": "product/f2.jpg", "msg": "description"},
-        {"name": "Tough-PETG","img": "product/f2.jpg", "msg": "description"},
-        {"name": "PETG-CF","img": "product/f2.jpg", "msg": "description"},
-        {"name": "Ordorless-ABS","img": "product/f2.jpg", "msg": "description"},
-        {"name": "ASA","img": "product/f2.jpg", "msg": "description"}
+        {"name": "PETG","img": "product/f2.jpg", "msg": "description", "chname": "PETG", "feat": "", "dimg":[""]},
+        {"name": "Tough-PETG","img": "product/f2.jpg", "msg": "description", "chname": "增韧型PETG", "feat": "强度高，材料流动性优，成型效果好", "dimg":["tough0.png", "tough1.png"]},
+        {"name": "PETG-CF","img": "product/f2.jpg", "msg": "description", "chname": "碳纤增强PETG", "feat": "抗翘曲，磨砂质感", "dimg":[""]},
+        {"name": "Ordorless-ABS","img": "product/f2.jpg", "msg": "description", "chname": "低气味ABS", "feat": "", "dimg":[""]},
+        {"name": "ASA","img": "product/f2.jpg", "msg": "ASA是—款综合性能优异的3D打印材料，材料性质和机械性能与ABS接近，并具有低气味和耐紫外老化的恃性，可代替ABS并应用千户外环境", "chname": "ASA", "feat": "最佳耐光老化，较高耐热", "dimg":["ASA0.png","ASA1.png"]}
       ]
     },
     {
       "cate": "柔性材料",
       "v": [
-        {"name": "TPU","img": "product/f2.jpg", "msg": "description"},
-        {"name": "TPU-Foam","img": "product/f2.jpg", "msg": "description"}
+        {"name": "TPU","img": "product/f2.jpg", "msg": "description", "chname": "PETG", "feat": "", "dimg":[""]},
+        {"name": "TPU-Foam","img": "product/f2.jpg", "msg": "description", "chname": "PETG", "feat": "", "dimg":[""]}
       ]
     },
     {
       "cate": "工业级材料",
       "v": [
-        {"name": "PETG-ESD","img": "product/f2.jpg", "msg": "description"},
-        {"name": "UltraPA","img": "product/f2.jpg", "msg": "description"},
-        {"name": "EasePA12-CF","img": "product/f2.jpg", "msg": "description"},
-        {"name": "UltraPA-GF","img": "product/f2.jpg", "msg": "description"},
-        {"name": "UltraPA-CF","img": "product/f2.jpg", "msg": "description"}
+        {"name": "PETG-ESD","img": "product/f2.jpg", "msg": "description", "chname": "PETG", "feat": "", "dimg":[""]},
+        {"name": "UltraPA","img": "product/f2.jpg", "msg": "description", "chname": "PETG", "feat": "", "dimg":[""]},
+        {"name": "EasePA12-CF","img": "product/f2.jpg", "msg": "description", "chname": "PETG", "feat": "", "dimg":[""]},
+        {"name": "UltraPA-GF","img": "product/f2.jpg", "msg": "description", "chname": "PETG", "feat": "", "dimg":[""]},
+        {"name": "UltraPA-CF","img": "product/f2.jpg", "msg": "description", "chname": "PETG", "feat": "", "dimg":[""]}
       ]
     },
     {
       "cate": "支撑材料",
       "v": [
-        {"name": "S-Green","img": "product/f2.jpg", "msg": "description"},
-        {"name": "S-Purple","img": "product/f2.jpg", "msg": "description"},
-        {"name": "S-Blue","img": "product/f2.jpg", "msg": "description"}
+        {"name": "S-Green","img": "product/f2.jpg", "msg": "description", "chname": "PETG", "feat": "", "dimg":[""]},
+        {"name": "S-Purple","img": "product/f2.jpg", "msg": "description", "chname": "PETG", "feat": "", "dimg":[""]},
+        {"name": "S-Blue","img": "product/f2.jpg", "msg": "description", "chname": "PETG", "feat": "", "dimg":[""]}
       ]
     },
     {
       "cate": "辅助工具",
       "v": [
-        {"name": "FusDry","img": "product/f2.jpg", "msg": "description"}
+        {"name": "FusDry","img": "product/f2.jpg", "msg": "description", "chname": "PETG", "feat": "", "dimg":[""]}
       ]
     }
   ]

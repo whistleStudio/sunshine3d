@@ -46,3 +46,5 @@ productData调整了下结构
 product/details
 ### [04211704]
 details单个页面布局OK
+### [04252301]
+detail页面推进了些

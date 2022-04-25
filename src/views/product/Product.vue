@@ -10,7 +10,7 @@
           @mouseenter="actProIdx=10*i+pi" @mouseleave="actProIdx=-1"> 
             <div class="proImg" :style="{backgroundImage: `url(${require('img/'+pv.img)})`}"></div>
             <span class="proName">{{pv.name}}</span>
-            <div v-if="actProIdx==(10*i+pi)" class="proLiHover" @click="toDetailsPage(pv.name)">
+            <div v-if="actProIdx==(10*i+pi)" class="proLiHover" @click="toDetailsPage(pv)">
               <span>{{pv.msg}}</span>
             </div>
           </li>
@@ -45,10 +45,10 @@
       "page-nav-bar": PageNavBar,
     },
     methods: {
-      toDetailsPage(p) {
+      toDetailsPage(pv) {
         this.$router.push({
           path: "/product/details",
-          query: {pname: p}
+          query: {pv}
         })
       }
     },

@@ -44,7 +44,7 @@ export default {
   },
   methods: {
     toPage (path) {
-      this.$router.push(path)
+      this.$router.push("/"+path)
     }
   }
 }

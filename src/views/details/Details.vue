@@ -2,16 +2,16 @@
   <div id="details">
     <div id="head">
       <div id="hLeft">
-        <div></div>
+        <div :style="{backgroundImage: `url(/details/${pv.dimg[actImgIdx]})`}"></div>
         <ul>
-          <li></li>
-          <li></li>
+          <li v-for="(v, i) in pv.dimg" :key="i" :style="{backgroundImage: `url(/details/${v})`}"
+          @click="actImgIdx=i"></li>
         </ul>
       </div>
       <div id="hRight">
         <div>
-          <h1>xxx</h1>
-          <h2>xxxxxxxxxx</h2>
+          <h1>{{pv.chname}}</h1>
+          <h2>{{pv.feat}}</h2>
           <span><i class="iconfont icon-24gf-telephone"></i> 联系电话</span>
         </div>
       </div>
@@ -19,7 +19,7 @@
     <div id="main">
       <div>详细信息</div>
 
-      <img src="/details/Tough-PETG.png" alt="">
+      <img :src="`/details/${pv.name}.png`" alt="">
       <div></div>
     </div>
   </div>
@@ -29,11 +29,12 @@
 export default {
   data () {
     return {
-      pname: ""
+      pv: [],
+      actImgIdx: 0
     }
   },
   created () {
-    this.pname = this.$route.query.pname
+    this.pv = this.$route.query.pv
   }
 }
 </script>
@@ -50,18 +51,17 @@ export default {
   #head {
     width: 65%;
     height: 500px;
-    background-color: cyan;
     display: flex;
   }
   #hLeft {
     width: 420px;
     height: 500px;
-    background-color: pink;
   }
   #hLeft>div {
     width: 420px;
     height: 420px;
-    background-color: olive;
+    box-sizing: border-box;
+    background: center/cover no-repeat;
   }
   #hLeft>ul {
     width: 100%;
@@ -75,10 +75,13 @@ export default {
     height: 60px;
     margin-right: 0.5rem;
     box-sizing: border-box;
-    border: 1px solid gray;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    background: center/cover no-repeat;
+    cursor: pointer;
   }
   #hRight {
-    margin-left: 5rem;
+    margin-left: 7rem;
     display: flex;
     align-items: center;
   }
@@ -89,6 +92,15 @@ export default {
     font-size: 30px;
     margin-bottom: 1rem;
   }
+  #hRight span {
+    margin-top: 1rem;
+    font-size: 20px;
+  }
+  #hRight span:hover {
+    cursor: pointer;
+    color: var(--rFontColor);
+  }
+
   #main {
     margin-top: 3rem;
     width: 65%;
@@ -105,17 +117,10 @@ export default {
   #main>div:last-of-type {
     margin-bottom: 1rem;
   }
-  /* #main>div:last-of-type {
-    margin-top: 1rem;
-    width: 65%;
-    height: auto;
-    background-color: orange;
-  } */
+
   #main img {
     display: block;
     width: 65vw;
   }
-  /* #main img::after {
-    margin-bottom: 2rem;
-  } */
+
 </style>

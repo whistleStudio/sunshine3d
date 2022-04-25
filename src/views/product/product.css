@@ -73,6 +73,12 @@
   align-items: center;
   animation: showDescrip 0.5s forwards;
 }
+.proLiHover>span {
+  color: white;
+  display: block;
+  width: 80%;
+  font: 1.2rem/2rem sans-serif;
+}
 @keyframes showDescrip {
    from {height: 0;}
    to   {height: 100%;}
