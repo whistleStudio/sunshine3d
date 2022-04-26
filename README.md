@@ -48,3 +48,4 @@ product/details
 details单个页面布局OK
 ### [04252301]
 detail页面推进了些
+### [04261725]

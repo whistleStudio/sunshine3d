@@ -4,8 +4,8 @@
       "cate": "通用级材料",
       "v": [
         {"name": "PETG","img": "product/f2.jpg", "msg": "description", "chname": "PETG", "feat": "", "dimg":[""]},
-        {"name": "Tough-PETG","img": "product/f2.jpg", "msg": "description", "chname": "增韧型PETG", "feat": "强度高，材料流动性优，成型效果好", "dimg":["tough0.png", "tough1.png"]},
-        {"name": "PETG-CF","img": "product/f2.jpg", "msg": "description", "chname": "碳纤增强PETG", "feat": "抗翘曲，磨砂质感", "dimg":[""]},
+        {"name": "Tough-PETG","img": "product/f2.jpg", "msg": "Tough-PETG是—款专为FDM开发的韧性改良PETG，通过提高材料流动性，使其具有极佳的打印性能。同时相比PLA具有更好的力学强度与耐热性。", "chname": "增韧型PETG", "feat": "强度高，材料流动性优，成型效果好", "dimg":["tough0.png", "tough1.png"]},
+        {"name": "PETG-CF","img": "product/f2.jpg", "msg": "PETG-CF 是一款短切碳纤维填充的 PETG 材料，提高了耗材的抗翘曲性能，并使悬垂面表面质量得到提高，同时也赋予了材料磨砂的表面质感。", "chname": "碳纤增强PETG", "feat": "抗翘曲，磨砂质感", "dimg":[""]},
         {"name": "Ordorless-ABS","img": "product/f2.jpg", "msg": "description", "chname": "低气味ABS", "feat": "", "dimg":[""]},
         {"name": "ASA","img": "product/f2.jpg", "msg": "ASA是—款综合性能优异的3D打印材料，材料性质和机械性能与ABS接近，并具有低气味和耐紫外老化的恃性，可代替ABS并应用千户外环境", "chname": "ASA", "feat": "最佳耐光老化，较高耐热", "dimg":["ASA0.png","ASA1.png"]}
       ]
@@ -13,7 +13,7 @@
     {
       "cate": "柔性材料",
       "v": [
-        {"name": "TPU","img": "product/f2.jpg", "msg": "description", "chname": "PETG", "feat": "", "dimg":[""]},
+        {"name": "TPU-95A","img": "product/f2.jpg", "msg": "TPU-95A是一款易打印的柔性3D打印材料。在同等硬度下，TPU-95A相比其他常规TPU 耗材会更容易被挤出，可支持l00mm/s以上的打印速度。", "chname": "改良型TPU", "feat": "材料流动性优, 易打印", "dimg":["TPU0.jpg"]},
         {"name": "TPU-Foam","img": "product/f2.jpg", "msg": "description", "chname": "PETG", "feat": "", "dimg":[""]}
       ]
     },
