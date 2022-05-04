@@ -30,15 +30,15 @@
     {
       "cate": "支撑材料",
       "v": [
-        {"name": "S-Green","img": "product/f2.jpg", "msg": "S-Green，快速易剥离支撑材料，通过调节与主体材料的支撑面粘接强度与S-Green的自身粘接强度实现决速易剥离功能。", "chname": "快速易剥离支撑材料S-Green", "feat": "自适应粘接技术，快拆技术，环境友好", "dimg":["SGreen0.jpg","SGreen1.jpg"]},
-        {"name": "S-Purple","img": "product/f2.jpg", "msg": "description", "chname": "PETG", "feat": "", "dimg":[""]},
-        {"name": "S-Blue","img": "product/f2.jpg", "msg": "description", "chname": "PETG", "feat": "", "dimg":[""]}
+        {"name": "S-Green","img": "product/f2.jpg", "msg": "S-Green快速易剥离支撑材料，通过调节与主体材料的支撑面粘接强度与S-Green的自身粘接强度实现决速易剥离功能。", "chname": "快速易剥离支撑材料S-Green", "feat": "自适应粘接技术，快拆技术，环境友好", "dimg":["SGreen0.jpg","SGreen1.jpg"]},
+        {"name": "S-Purple","img": "product/f2.jpg", "msg": "S-Purple快速另剥离支撑材料，通过调节与主体材料的支撑面粘接强度与S-Purple的自身粘接强度实现决速易剥离功能.", "chname": "快速易剥离支撑材料S-Purple", "feat": "自适应粘接技术，快拆技术，环境友好", "dimg":["SPurple0.png","SPurple1.png"]},
+        {"name": "S-Blue","img": "product/f2.jpg", "msg": "S-Blue快速男剥离支撑材料，通过调节与主体材料的支撑面粘接强度与S-Blue的自身粘接强度实现快速男剥离功能。S-Blue快速男剥离支撑材料在拆除支撑过程中无需使用水或溶剂，不产生水污染，安全环保", "chname": "快速易剥离支撑材料S-Blue", "feat": "自适应粘接技术，快拆技术，环境友好", "dimg":["SBlue0.png","SBlue1.png"]}
       ]
     },
     {
       "cate": "辅助工具",
       "v": [
-        {"name": "FusDry","img": "product/f2.jpg", "msg": "description", "chname": "PETG", "feat": "", "dimg":[""]}
+        {"name": "FusDry","img": "product/f2.jpg", "msg": "description", "chname": "FusDry线材干燥盒", "feat": "", "dimg":["Dry0.png","Dry1.png"]}
       ]
     }
   ]
