@@ -12,11 +12,11 @@
               <div class="sTitle">{{a.sTitle}}</div>
               <div class="exLine">|</div>
             </div>
-            <div class="card cardTop transparent" v-if="a.id==actCardId" @mouseleave="actCardId=-1">
+            <!-- <div class="card cardTop transparent" v-if="a.id==actCardId" @mouseleave="actCardId=-1">
               <card-2 :cardResume="a.resume" :cardDate="a.sTitle+'-'+a.bTitle" 
                 :cardPic="a.img" 
               />
-            </div>             
+            </div>              -->
           </div>
           <div v-else>
             <div class="info infoBot" :class="{disappear: a.id==actCardId}" @mouseover="actCardId=a.id" >
@@ -25,11 +25,11 @@
               <div class="sTitle">{{a.sTitle}}</div>
               <div class="resume">{{a.resume}}</div>
             </div>
-            <div class="card cardBot transparent" v-if="a.id==actCardId" @mouseleave="actCardId=-1">
+            <!-- <div class="card cardBot transparent" v-if="a.id==actCardId" @mouseleave="actCardId=-1">
               <card-2 :cardResume="a.resume" :cardDate="a.sTitle+'-'+a.bTitle" 
                 :cardPic="a.img" 
               />
-            </div>            
+            </div>             -->
           </div>
 
         </li>      
@@ -70,7 +70,8 @@
     transform: translateX(calc(-50% + 0.5rem)) translateY(calc(10%));
   }
   .disappear {
-    animation: turnTransparent 0.3s forwards;
+    display: show;
+    /* animation: turnTransparent 0.3s forwards; */
   }
 
   .transparent:hover {

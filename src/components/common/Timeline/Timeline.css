@@ -67,7 +67,7 @@
     justify-content: flex-start;
   }
   .resume {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
   }
@@ -88,7 +88,8 @@
   }
 
   .mark:hover {
-    animation: bigger 0.5s forwards;
+    display: show;
+    /* animation: bigger 0.5s forwards; */
   }
   /* .info:hover {
     animation: turnTransparent 0.3s forwards;

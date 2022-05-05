@@ -14,11 +14,11 @@
       return {
         activities: [
           {cate: 2022, info:[
-            {id: 0, sTitle: 2022, bTitle: 4, resume:"3D打印一个你的爱豆\n红豆", img: "act0.jpg"},
-            {id: 1, sTitle: 2022, bTitle: 3, resume:"3D打印一个你的爱豆\n黑豆", img: "act1.jpg"},
-            {id: 2, sTitle: 2022, bTitle: 3, resume:"3D打印一个你的爱豆\n绿豆", img: "act2.jpg"},
-            {id: 3, sTitle: 2022, bTitle: 2, resume:"3D打印一个你的爱豆\n黄豆", img: "act3.jpg"},
-            {id: 4, sTitle: 2022, bTitle: 2, resume:"3D打印一个你的爱豆\n巧克力豆", img: "act4.jpg"},
+            {id: 0, sTitle: 2017, bTitle: 7, resume:"扬州增材智能科技有限公司\n创立", img: "act0.jpg"},
+            {id: 1, sTitle: 2019, bTitle: 6, resume:"秸秆类3D打印耗材专利\n注册", img: "act1.jpg"},
+            {id: 2, sTitle: 2020, bTitle: 3, resume:"南京栖霞区冲之科技工作室\n成立", img: "act2.jpg"},
+            {id: 3, sTitle: 2021, bTitle: 9, resume:"绿色3D打印创业团队\n组建", img: "act3.jpg"},
+            {id: 4, sTitle: 2021, bTitle: 11, resume:"南京上善增材新材料有限公司\n成立", img: "act4.jpg"},
           ]},
           {cate: 2021, info:[
             {id: 0, sTitle: 2021, bTitle: 4, resume:"3D打印两个个你的爱豆\n红豆红豆", img: ""},
