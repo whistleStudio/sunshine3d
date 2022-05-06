@@ -3,16 +3,15 @@
   <div id="home">
     <h-carousel />
     <h-activity />
-
+    <h-mainshow />
   </div>
 </template>
 
 <script>
-  import H_product from "views/home/H_product"
-  import H_case from "views/home/H_case"
+
   import H_activity from "views/home/H_activity"
   const H_carousel = ()=>import("views/home/H_carousel")
-
+  const H_mainshow = ()=>import("views/home/H_mainshow")
 
   export default {
     data () {
@@ -22,8 +21,7 @@
     },
     components: {
       "h-carousel": H_carousel,
-      "h-product": H_product,
-      "h-case": H_case,
+      "h-mainshow": H_mainshow,
       "h-activity": H_activity,
     },
     computed: {
