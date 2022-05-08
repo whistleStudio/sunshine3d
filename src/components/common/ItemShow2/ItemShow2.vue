@@ -1,25 +1,23 @@
-/* 排列样式还有些问题 */
 <template>
   <div>
     <ul id="pItems" v-if="actCateIdx != -1" >
-      <li v-for="(v, i) in pData[actCateIdx].v.slice(pStart, pEnd)" :key="i" @mouseover="triggerHover(i)"  @mouseout="removeHover(i)">
+      <li v-for="(v, i) in pData[actCateIdx].v.slice(pStart, pEnd)" :key="i" 
+      @mouseover="triggerHover(i)"  @mouseout="removeHover(i)" @click="getInfo(i)">
         <div class="pic" :style="{backgroundImage: `url(${require('img/'+v.img)})`}"></div>
         <div class="resume">
-          <h3>xxxx</h3>
-          <div>xxxxxxxxxxxxxxxx</div>
+          <h3>{{v.sub}}</h3>
+          <div>{{v.des}}</div>
           <span>了解更多</span>
         </div>
       </li>
     </ul>
     <ul id="pItems" v-else >
-      <li v-for="(v, i) in totals.slice(pStart, pEnd)" :key="i" @mouseover="triggerHover(i)"  @mouseout="removeHover(i)">
-        <!-- <img :src="require('img/'+v.img)" alt=""> -->
-        <!-- <span>{{v.name}}</span>
-        <div class="resume">{{v.msg}}</div> -->
+      <li v-for="(v, i) in totals.slice(pStart, pEnd)" :key="i" 
+      @mouseover="triggerHover(i)"  @mouseout="removeHover(i)" @click="getInfo(i)">
         <div class="pic" :style="{backgroundImage: `url(${require('img/'+v.img)})`}"></div>
         <div class="resume">
-          <h3>xxxx</h3>
-          <div>xxxxxxxxxxxxxxxx</div>
+          <h3>{{v.sub}}</h3>
+          <div>{{v.des}}</div>
           <span>了解更多</span>
         </div>
       </li>                    
@@ -45,11 +43,7 @@ export default {
       curSelectPage: 0, 
       actCateIdx: this._actCateIdx,
       pStart: this._pStart,
-      pEnd: this._pEndMax,
-      // pItemsStyle: {
-      //   width: "60vw",
-      //   height: "45vw"
-      // }        
+      pEnd: this._pEndMax,    
     }
   },
   computed: {
@@ -113,6 +107,17 @@ export default {
        let idx = i%this._pEndMax
        document.querySelectorAll(".pic")[idx].classList.remove("picHover")
       document.querySelectorAll(".resume>span")[idx].classList.remove("spanHover")
+    },
+    getInfo (i) {
+      let pInfo = this.actCateIdx<0 ? this.totals[i] : this.pData[this.actCateIdx].v[i]
+      if (pInfo.link2) {
+        this.$router.push({
+          path: "/activity/actInfo",
+          query: {info: pInfo.link2}
+        })
+      } else {
+        window.open(pInfo.link)
+      }
     }    
   },
   watch: {

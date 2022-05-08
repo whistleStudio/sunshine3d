@@ -46,6 +46,7 @@
     },
     methods: {
       toDetailsPage(pv) {
+        sessionStorage.setItem("pDetail", JSON.stringify(pv))
         this.$router.push({
           path: "/product/details",
           query: {pv}

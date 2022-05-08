@@ -1,23 +1,18 @@
 {
   "pData": [
     {"id": 1, "v": [
-      {"name": "PLA","img": "activity/act0.jpg", "msg": "description"},
-      {"name": "PLA","img": "activity/act0.jpg", "msg": "description"},
-      {"name": "PLA","img": "activity/act0.jpg", "msg": "description"},
-      {"name": "PLA","img": "activity/act0.jpg", "msg": "description"},
-      {"name": "PLA","img": "activity/act0.jpg", "msg": "description"},
-      {"name": "PLA","img": "activity/act0.jpg", "msg": "description"}
+      {"sub":"秸秆3D打印", "des":"助力绿色环保", "img": "activity/act0.jpg", "link2": "xxx"}
 
     ]},
     {"id": 2, "v": [
-      {"name": "树脂", "img": "activity/act1.jpg", "msg": "description"},
-      {"name": "树脂", "img": "activity/act1.jpg", "msg": "description"},
-      {"name": "树脂", "img": "activity/act1.jpg", "msg": "description"}
+      {"sub":"工业与艺术的结合", "des":"大型户外雕塑的3DP砂型打印技术新形式", "img": "activity/b0.png", "link": "https://3dprint.ofweek.com/2022-04/ART-132102-8210-30559488.html"},
+      {"sub":"3D打印新突破", "des":"非逐层打印，打印物体完全由厚树脂支撑，可以从任何角度进行添加", "img": "activity/b1.png", "link": "https://3dprint.ofweek.com/2022-04/ART-132101-8130-30558524.html"},
+      {"sub":"3D打印可回收背包", "des":"堆肥状态下能够自动降解，对环境不造成任何污染", "img": "activity/b2.png", "link": "https://3dprint.ofweek.com/2022-03/ART-132105-8140-30552864.html"}
     ]},
     {"id": 3, "v": [
-      {"name": "其他", "img": "activity/act3.jpg", "msg": "description"},
-      {"name": "其他", "img": "activity/act3.jpg", "msg": "description"},
-      {"name": "其他", "img": "activity/act3.jpg", "msg": "description"}
+      {"sub":"秸秆3D打印", "des":"助力绿色环保", "img": "activity/act1.jpg", "link2": "xxx"},
+      {"sub":"秸秆3D打印", "des":"助力绿色环保", "img": "activity/act1.jpg", "link2": "xxxx"},
+      {"sub":"秸秆3D打印", "des":"助力绿色环保", "img": "activity/act1.jpg", "link2": "xxxxx"}
     ]}
   ]
 }

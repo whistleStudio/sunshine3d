@@ -34,7 +34,7 @@ export default {
     }
   },
   created () {
-    this.pv = this.$route.query.pv
+    this.pv = JSON.parse(sessionStorage.getItem("pDetail"))
   }
 }
 </script>

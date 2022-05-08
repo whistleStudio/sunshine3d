@@ -1,11 +1,19 @@
 /* 宫格长宽--pItemsLiW, --pItemsLiH，图片长宽--pItemsImgW, --pItemsImgH */
 * {
-  --mainColor: var(--rFontColor)
+  --mainColor: var(--rFontColor);
+  --width: 60vw;
+  --height: 60vw;
+  --pItemsLiW: 18vw;
+  --pItemsLiH: 18vw;
+  --pItemsImgW: 17vw;
+  --pItemsImgH: 12vw; 
 }
 #pItems {
+  width: var(--width);
+  height: var(--height);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-content: flex-start;
   margin-bottom: 3rem;
 }
@@ -20,6 +28,10 @@
   overflow: hidden;
   background-color: white;
   margin-bottom: 1.5vw;
+  box-sizing: border-box;
+}
+#pItems>li:not(:nth-of-type(3n)) {
+  margin-right: calc((var(--width) - var(--pItemsLiW)*3) / 2);
 }
 .pic {
   margin-top: 0.5vw;

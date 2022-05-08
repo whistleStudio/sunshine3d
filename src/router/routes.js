@@ -4,6 +4,7 @@ const Product = () => import("views/product/Product")
 const Activity = () => import("views/activity/Activity")
 const Contact = () => import("views/contact/Contact")
 const Details = () => import("views/details/Details")
+const ActInfo = () => import("views/actInfo/ActInfo")
 
 const routes = [
   {
@@ -29,6 +30,10 @@ const routes = [
   {
     path: "/activity",
     component: Activity
+  },
+  {
+    path: "/activity/actInfo",
+    component: ActInfo
   },
   {
     path: "/contact",
