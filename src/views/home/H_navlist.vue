@@ -1,9 +1,9 @@
 <template>
   <div id="navlist">
     <ul>
-      <li v-for="(v, i) in materials" :key="i">
+      <li v-for="(v, i) in materials" :key="i" @click="toDetail(v)">
         <div :style="{backgroundImage: `url(${require('img/materialsicon-0'+(i+1)+'.png')})`}"></div>
-        <span>{{v}}</span>
+        <span>{{v.name}}</span>
       </li>
     </ul>
   </div>
@@ -13,7 +13,27 @@
 export default {
   data () {
     return {
-      materials: ["PLA", "ABS", "PETG", "ASA", "TPU", "PA", "DryBox"]
+      // materials: ["PLA", "ABS", "PETG", "ASA", "TPU", "PA", "DryBox"],
+      materials: [
+        {name: "PLA", idx:[0,0]},
+        {name: "ABS", idx:[0,3]},
+        {name: "PETG", idx:[0,0]},
+        {name: "ASA", idx:[0,4]},
+        {name: "TPU", idx:[1,1]},
+        {name: "PA", idx:[2,1]},
+        {name: "DryBox", idx:[4,0]},
+      ]
+    }
+  },
+  methods: {
+    toDetail (v) {
+      let pv = this.$pData[v.idx[0]].v[v.idx[1]] 
+      console.log(pv)
+      sessionStorage.setItem("pDetail", JSON.stringify(pv))
+      this.$router.push({
+        path: "/product/details",
+        query: {pv}
+      })
     }
   }
   

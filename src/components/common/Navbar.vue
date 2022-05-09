@@ -17,13 +17,14 @@
     <ul v-if="navbarList[actTitleId]&&navbarList[actTitleId].cmenu"  @mouseleave="actTitleId=-1" class="navCMenu">
       <li v-for="(v,i) in navbarList[actTitleId].cmenu" :key="i" class="cMenuLi">
         <h3>{{v.cate}}</h3>
-        <span v-for="(cv, ci) in v.v" :key="ci" >{{cv}}</span>
+        <span v-for="(cv, ci) in v.v" :key="ci" @click="toDetail(i,ci)">{{cv}}</span>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+
 export default {
   data () {
     return {
@@ -45,7 +46,19 @@ export default {
   methods: {
     toPage (path) {
       this.$router.push("/"+path)
-    }
+    },
+    toDetail (i,ci) {
+      let pv = this.$pData[i].v[ci] 
+      sessionStorage.setItem("pDetail", JSON.stringify(pv))
+      this.$router.push("/product")
+      setTimeout(()=>{
+        this.$router.push({
+        path: "/product/details",
+        query: {pv}
+      })
+      },1)
+
+    }    
   }
 }
 </script>

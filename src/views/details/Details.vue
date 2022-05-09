@@ -18,7 +18,6 @@
     </div>
     <div id="main">
       <div>详细信息</div>
-
       <img :src="`/details/${pv.name}.png`" alt="">
       <div></div>
     </div>
@@ -29,12 +28,14 @@
 export default {
   data () {
     return {
-      pv: [],
+      pv: {},
       actImgIdx: 0
     }
   },
   created () {
     this.pv = JSON.parse(sessionStorage.getItem("pDetail"))
+
+
   }
 }
 </script>

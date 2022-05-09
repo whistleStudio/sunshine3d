@@ -8,7 +8,6 @@
 
 <script>
   import SNavbar from "components/private/SNavbar"
-
   import SWebFooter from "components/private/SWebFooter"
 
   export default {
