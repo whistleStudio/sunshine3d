@@ -16,9 +16,10 @@ export default {
   data () {
     return {
         carouselImg: [
-          'carousel/m1.jpg',
-          'carousel/m2.jpg',
-          'carousel/m1.jpg'
+         {img:'carousel/m1.png',link:[0,1]},
+         {img:'carousel/m2.png',link:[0,4]},
+         {img:'carousel/m3.png',link:[1,1]},
+         {img:'carousel/m1.png',link:[0,1]},
         ]
     }
   },

@@ -1,7 +1,8 @@
 <template>
   <div id="carousel">
     <ul ref="carouselUl" @mouseenter="startFlag=0" @mouseleave="startFlag=1">
-      <li ref="carouselLi" v-for="(v, i) in imgLink" :key="i" :style="{backgroundImage: `url(${require('img/'+v)})`}" 
+      <li ref="carouselLi" v-for="(v, i) in imgLink" :key="i" :style="{backgroundImage: `url(${require('img/'+v.img)})`}" 
+      @click="toDetail(v.link)"
       class="showItem"></li>
     </ul>
     <div id="swapBtn">
@@ -12,6 +13,7 @@
 </template>
 
 <script>
+// 复用注意link形式, $pData可能需要改
 export default {
   data () {
     return {
@@ -60,6 +62,16 @@ export default {
     actChange (i) {
       let change = i ? 100 : -100
       this.pos += change
+    },
+    /* 详情页 */
+    toDetail (link) {
+      let i = link[0], ci = link[1]
+      let pv = this.$pData[i].v[ci] 
+      sessionStorage.setItem("pDetail", JSON.stringify(pv))
+      this.$router.push({
+        path: "/product/details",
+        query: {pv}
+      })     
     }
   },
   mounted () {
