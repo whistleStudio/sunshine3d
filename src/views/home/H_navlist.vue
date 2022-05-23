@@ -17,7 +17,7 @@ export default {
       materials: [
         {name: "PLA", idx:[0,0]},
         {name: "ABS", idx:[0,3]},
-        {name: "PETG", idx:[0,0]},
+        {name: "PETG", idx:[0,1]},
         {name: "ASA", idx:[0,4]},
         {name: "TPU", idx:[1,1]},
         {name: "PA", idx:[2,1]},

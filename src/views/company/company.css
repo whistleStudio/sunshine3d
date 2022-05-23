@@ -1,7 +1,7 @@
 #company {
   background-color: rgb(247,247,247);
 }
-#company>div {
+#company>div:not(:last-of-type) {
   margin-bottom: 5rem;
 }
 h1 {
@@ -20,7 +20,7 @@ h1 {
   width: 35%;
   /* height: 20vh; */
   box-sizing: border-box;
-  font: 1.1rem/2.4rem sans-serif;
+  font: 1.2rem/2.4rem sans-serif;
 }
 #cpyCulture {
   width: 35%;
@@ -57,11 +57,11 @@ h1 {
 }
 #cpyPartner>div {
   margin: 0 auto;
-  width: 35%;
-  height: 35vh;
-  background: url("~img/company/partner.png") center/cover no-repeat;
+  width: 60vw;
+  height: calc(60vw / 2.8);
+  background: url("~img/company/partner.png") center/contain no-repeat;
 }
-#cpyGlory {
+/* #cpyGlory {
   margin-bottom: 0 !important;
 }
 #cpyGlory>div {
@@ -69,4 +69,4 @@ h1 {
   width: 35%;
   height: 35vh;
   background: url("~img/company/glory.png") center/cover no-repeat;
-}
+} */

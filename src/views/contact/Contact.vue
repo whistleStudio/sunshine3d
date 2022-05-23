@@ -50,9 +50,9 @@
         headImgSrc: `url(${require("img/contact/header.jpg")})`,
         cateData: [],
         infoData: [
-          {id:0, img:`url(${require("img/contactIcon2.png")})`, text:"江苏省南京市江宁区xxx街道xxx大厦"},
-          {id:1, img:`url(${require("img/contactIcon0.png")})`, text:"123456789"},
-          {id:2, img:`url(${require("img/contactIcon1.png")})`, text:[["(商务合作)","1234564789@126.com"],["(加入我们)","987654321@126.com"]]},
+          {id:0, img:`url(${require("img/contactIcon2.png")})`, text:"南京市栖霞区龙潭街道上坝村下坝工业园区5号"},
+          {id:1, img:`url(${require("img/contactIcon1.png")})`, text:"wr79@live.com"},
+          {id:2, img:`url(${require("img/contactIcon0.png")})`, text:[["13813990536","曹经理"],["13337813756","汪经理"]]},    
         ],
       };
     },

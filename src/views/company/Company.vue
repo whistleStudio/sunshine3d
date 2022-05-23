@@ -11,17 +11,17 @@
       <div><img :src="require('img/company/culture2.png')" alt=""><span>Special for you, Green & Safety</span></div>
     </div>
     <div id="cpyDev">
-      <h1>企业理念</h1>
+      <!-- <h1>企业理念</h1> -->
       <div></div>
     </div>
     <div id="cpyPartner">
       <h1>合作伙伴</h1>
       <div></div>
     </div>
-    <div id="cpyGlory">
+    <!-- <div id="cpyGlory">
       <h1>企业荣誉</h1>
       <div></div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -31,7 +31,7 @@
     data () {
       return {
         headImgSrc: `url(${require("img/company/header.jpg")})`,
-        cateData: ["公司简介", "核心价值观", "企业理念", "合作伙伴", "企业荣誉"],
+        cateData: ["公司简介", "核心价值观",  "合作伙伴"],
         culture: [
           {title: "企业口号", text: "创造现实 成就梦想", icon: require("img/company/culture0.png")}, 
           {title: "企业愿景", text: "xxxx", icon: require("img/company/culture1.png")}, 
