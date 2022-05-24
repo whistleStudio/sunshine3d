@@ -65,3 +65,5 @@ detail页面推进了些
 补充home company detail 修改contact
 ### [05241726]
 保底存下
+### [05241749]
+添加了压缩插件 打包无误
