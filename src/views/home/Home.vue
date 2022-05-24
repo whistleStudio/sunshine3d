@@ -21,8 +21,8 @@
     },
     components: {
       "h-carousel": H_carousel,
-      "h-mainshow": H_mainshow,
       "h-activity": H_activity,
+      "h-mainshow": H_mainshow
     },
     computed: {
 

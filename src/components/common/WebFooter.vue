@@ -16,12 +16,14 @@
         </ul>       
       </div>
       <div id="qrcode">
-        <ul>
+        <!-- <ul>
           <li v-for="icon in qrImg.slice(0,qrImg.length-1)" :key="icon.id" 
           :style="{backgroundImage: icon.link}"></li>
-        </ul>
-        <img :src="qrImg[qrImg.length-1].link" alt="">
-        <div>关注上善增材微信公众号</div>        
+        </ul> -->
+        <!-- <img :src="qrImg[qrImg.length-1].link" alt=""> -->
+        <img :src="require('img/map.png')" @click="qrJump" alt="点击获取详细信息">
+        <a target="_blank" ref="qrA" href="https://map.baidu.com/search/%E5%8D%97%E4%BA%AC%E5%B8%82%E6%A0%96%E9%9C%9E%E5%8C%BA%E9%BE%99%E6%BD%AD%E8%A1%97%E9%81%93%E4%B8%8A%E5%9D%9D%E6%9D%91/@13271085.535,3767168.87,19z?querytype=s&da_src=shareurl&wd=%E5%8D%97%E4%BA%AC%E5%B8%82%E6%A0%96%E9%9C%9E%E5%8C%BA%E9%BE%99%E6%BD%AD%E8%A1%97%E9%81%93%E4%B8%8A%E5%9D%9D%E6%9D%91&c=315&src=0&pn=0&sug=0&l=16&b=(13267807.352074299,3765797.440304313;13273638.400616158,3768659.8169973865)&from=webmap&biz_forward=%7B%22scaler%22:2,%22styles%22:%22pl%22%7D&device_ratio=2"></a>
+        <!-- <div>关注上善增材微信公众号</div>         -->
       </div>
     </div>
     <div id="ICP">
@@ -43,6 +45,11 @@
       cateData: Array,
       qrImg: Array,
       ICP: String
+    },
+    methods: {
+      qrJump () {
+        this.$refs.qrA.click()
+      }
     }
   }
 </script>
@@ -63,6 +70,7 @@
     align-items: center;
     color: var(--fontColor);
     padding-top: 2rem;
+    position: relative;
   }
   #contact>div {
     width: 80%;
@@ -93,6 +101,7 @@
     height: 3.5vh;
     vertical-align: top;
     line-height: 3.5vh;
+    font-size: 0.9rem;
   }
   #cate {
     height: 90%;
@@ -139,20 +148,23 @@
   #qrcode>img {
     margin-top: 1rem;
     width: 60%;
+    cursor: pointer;
   }
   #qrcode>div {
     margin-top: 1rem;
     font-size: 0.8rem;
   }
   #ICP {
-    margin-top: 2rem;
+    position: absolute;
+    bottom: 0;
+    /* margin-top: 2rem; */
     box-sizing: border-box;
     /* border-top: 1px solid rgba(255, 255, 255, 0.2); */
     width: 100% !important;
-    height: 100%;
+    height: 40px;
     background-color: rgba(0,0,0,0.1);
     display: flex;
-    padding: 1rem;
+    /* padding: 1rem; */
     align-items: center;
   }
   #ICP>span {

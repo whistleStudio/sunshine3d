@@ -3,42 +3,42 @@
     {
       "cate": "通用级材料",
       "v": [
-        {"name": "PLA","img": "product/f2.jpg", "msg": "PLA（聚乳酸）是一种新型的生物降解材料，使用可再生的植物资源（如玉米）所提出的淀粉原料制成。", "chname": "PLA", "feat": "高性价比，不堵头，色彩多样", "dimg":["PLA0.jpg", "PLA1.jpg"]},
-        {"name": "Tough-PETG","img": "product/f2.jpg", "msg": "Tough-PETG是—款专为FDM开发的韧性改良PETG，通过提高材料流动性，使其具有极佳的打印性能。同时相比PLA具有更好的力学强度与耐热性。", "chname": "增韧型PETG", "feat": "强度高，材料流动性优，成型效果好", "dimg":["tough0.png", "tough1.png"]},
-        {"name": "PETG-CF","img": "product/f2.jpg", "msg": "PETG-CF 是一款短切碳纤维填充的 PETG 材料，提高了耗材的抗翘曲性能，并使悬垂面表面质量得到提高，同时也赋予了材料磨砂的表面质感。", "chname": "碳纤增强PETG", "feat": "抗翘曲，磨砂质感", "dimg":[""]},
-        {"name": "Ordorless-ABS","img": "product/f2.jpg", "msg": "description", "chname": "低气味ABS", "feat": "", "dimg":["ABS0.jpg"]},
-        {"name": "ASA","img": "product/f2.jpg", "msg": "ASA是—款综合性能优异的3D打印材料，材料性质和机械性能与ABS接近，并具有低气味和耐紫外老化的恃性，可代替ABS并应用千户外环境", "chname": "ASA", "feat": "最佳耐光老化，较高耐热", "dimg":["ASA0.png","ASA1.png"]}
+        {"name": "PLA","img": "product/pla.jpg", "msg": "PLA（聚乳酸）是一种新型的生物降解材料，使用可再生的植物资源（如玉米）所提出的淀粉原料制成。", "chname": "PLA", "feat": "高性价比，不堵头，色彩多样", "dimg":["PLA0.jpg", "PLA1.jpg"]},
+        {"name": "Tough-PETG","img": "product/toughpetg.jpg", "msg": "Tough-PETG是—款专为FDM开发的韧性改良PETG，通过提高材料流动性，使其具有极佳的打印性能。同时相比PLA具有更好的力学强度与耐热性。", "chname": "增韧型PETG", "feat": "强度高，材料流动性优，成型效果好", "dimg":["tough0.png", "tough1.png"]},
+        {"name": "PETG-CF","img": "product/petgcf.jpg", "msg": "PETG-CF 是一款短切碳纤维填充的 PETG 材料，提高了耗材的抗翘曲性能，并使悬垂面表面质量得到提高，同时也赋予了材料磨砂的表面质感。", "chname": "碳纤增强PETG", "feat": "抗翘曲，磨砂质感", "dimg":["PETGCF0.jpg"]},
+        {"name": "Ordorless-ABS","img": "product/abs.jpg", "msg": "description", "chname": "低气味ABS", "feat": "", "dimg":["ABS0.jpg"]},
+        {"name": "ASA","img": "product/asa.jpg", "msg": "ASA是—款综合性能优异的3D打印材料，材料性质和机械性能与ABS接近，并具有低气味和耐紫外老化的恃性，可代替ABS并应用千户外环境", "chname": "ASA", "feat": "最佳耐光老化，较高耐热", "dimg":["ASA0.png","ASA1.png"]}
       ]
     },
     {
       "cate": "柔性材料",
       "v": [
-        {"name": "TPU-95A","img": "product/f2.jpg", "msg": "TPU-95A是一款易打印的柔性3D打印材料。在同等硬度下，TPU-95A相比其他常规TPU 耗材会更容易被挤出，可支持l00mm/s以上的打印速度。", "chname": "改良型TPU", "feat": "材料流动性优, 易打印", "dimg":["TPU0.jpg"]},
-        {"name": "TPU-Foam","img": "product/f2.jpg", "msg": "TPU-Foam材料通过独特的发泡技术，克服了TPU材料密度大、硬度高、减震性能差等方面的缺点，赋予材料低密度、高弹性的特点，同时材料也兼顾了易打印的特性，可使用大部分近程挤出机打印。", "chname": "发泡型TPU", "feat": "低密度，高弹性", "dimg":["TPUF0.png", "TPUF1.png"]}
+        {"name": "TPU-95A","img": "product/tpu95a.jpg", "msg": "TPU-95A是一款易打印的柔性3D打印材料。在同等硬度下，TPU-95A相比其他常规TPU 耗材会更容易被挤出，可支持l00mm/s以上的打印速度。", "chname": "改良型TPU", "feat": "材料流动性优, 易打印", "dimg":["TPU0.jpg"]},
+        {"name": "TPU-Foam","img": "product/tpufoam.jpg", "msg": "TPU-Foam材料通过独特的发泡技术，克服了TPU材料密度大、硬度高、减震性能差等方面的缺点，赋予材料低密度、高弹性的特点，同时材料也兼顾了易打印的特性，可使用大部分近程挤出机打印。", "chname": "发泡型TPU", "feat": "低密度，高弹性", "dimg":["TPUF0.png", "TPUF1.png"]}
       ]
     },
     {
       "cate": "工业级材料",
       "v": [
-        {"name": "PETG-ESD","img": "product/f2.jpg", "msg": "PETG-ESD 是一款具有防静电功能的 3D 打印耗材，同时具有较好的打印性和均衡的机械性能。", "chname": "抗静电PETG", "feat": "防静电，机械性能均衡", "dimg":["PETGESD0.png","PETGESD1.png"]},
-        {"name": "UltraPA","img": "product/f2.jpg", "msg": "UltraPA专为FDM3D打印工艺开发，基材选用芳香族高温尼龙原料，与尼龙6柜比有强度与耐热性能更高吸湿率更低的优势。", "chname": "特种高温PA", "feat": "耐热性高，吸湿率低", "dimg":["UltraPA0.jpg", "UltraPA1.jpg"]},
-        {"name": "EasePA12-CF","img": "product/f2.jpg", "msg": "EasePA12-CF专为FDM3D打印工艺开发，基材选用PA12长链尼龙，具有低密度，低吸湿，高强度，高耐磨性，耐化学性优异和高耐热性的特点。", "chname": "碳纤增强PA12", "feat": "超低湿度敏感性，低密度，超强耐磨性", "dimg":["EasePA0.jpg","EasePA1.jpg","EasePA2.jpg"]},
-        {"name": "UltraPA-GF","img": "product/f2.jpg", "msg": "UltraPA-GF专为FDM3D打印工艺开发，基材选用高温尼龙，具有低吸湿，高强度，高耐磨性，耐化学性优异和高耐热性的特点。", "chname": "玻纤增强高温PA", "feat": "智能纤维增强技术，超低湿度敏感性，超强耐磨性", "dimg":["UltraPAGF0.jpg","UltraPAGF1.jpg"]},
-        {"name": "UltraPA-CF","img": "product/f2.jpg", "msg": "UltraPA-CF专为FDM3D打印工艺开发，基材选用高温尼龙，具有低吸湿，高强度，高耐磨性，耐化学性优异和高耐热性的特点。", "chname": "碳纤增强高温PA", "feat": "智能纤维增强技术，超低湿度敏感性，超强耐磨性", "dimg":["UltraPACF0.jpg","UltraPACF1.jpg"]}
+        {"name": "PETG-ESD","img": "product/petgesd.jpg", "msg": "PETG-ESD 是一款具有防静电功能的 3D 打印耗材，同时具有较好的打印性和均衡的机械性能。", "chname": "抗静电PETG", "feat": "防静电，机械性能均衡", "dimg":["PETGESD0.png","PETGESD1.png"]},
+        {"name": "UltraPA","img": "product/pla.jpg", "msg": "UltraPA专为FDM3D打印工艺开发，基材选用芳香族高温尼龙原料，与尼龙6柜比有强度与耐热性能更高吸湿率更低的优势。", "chname": "特种高温PA", "feat": "耐热性高，吸湿率低", "dimg":["UltraPA0.jpg", "UltraPA1.jpg"]},
+        {"name": "EasePA12-CF","img": "product/easepa12cf.jpg", "msg": "EasePA12-CF专为FDM3D打印工艺开发，基材选用PA12长链尼龙，具有低密度，低吸湿，高强度，高耐磨性，耐化学性优异和高耐热性的特点。", "chname": "碳纤增强PA12", "feat": "超低湿度敏感性，低密度，超强耐磨性", "dimg":["EasePA0.jpg","EasePA1.jpg","EasePA2.jpg"]},
+        {"name": "UltraPA-GF","img": "product/ultrapagf.jpg", "msg": "UltraPA-GF专为FDM3D打印工艺开发，基材选用高温尼龙，具有低吸湿，高强度，高耐磨性，耐化学性优异和高耐热性的特点。", "chname": "玻纤增强高温PA", "feat": "智能纤维增强技术，超低湿度敏感性，超强耐磨性", "dimg":["UltraPAGF0.jpg","UltraPAGF1.jpg"]},
+        {"name": "UltraPA-CF","img": "product/ultrapacf.jpg", "msg": "UltraPA-CF专为FDM3D打印工艺开发，基材选用高温尼龙，具有低吸湿，高强度，高耐磨性，耐化学性优异和高耐热性的特点。", "chname": "碳纤增强高温PA", "feat": "智能纤维增强技术，超低湿度敏感性，超强耐磨性", "dimg":["UltraPACF0.jpg","UltraPACF1.jpg"]}
       ]
     },
     {
       "cate": "支撑材料",
       "v": [
-        {"name": "S-Green","img": "product/f2.jpg", "msg": "S-Green快速易剥离支撑材料，通过调节与主体材料的支撑面粘接强度与S-Green的自身粘接强度实现决速易剥离功能。", "chname": "快速易剥离支撑材料S-Green", "feat": "自适应粘接技术，快拆技术，环境友好", "dimg":["SGreen0.jpg","SGreen1.jpg"]},
-        {"name": "S-Purple","img": "product/f2.jpg", "msg": "S-Purple快速另剥离支撑材料，通过调节与主体材料的支撑面粘接强度与S-Purple的自身粘接强度实现决速易剥离功能.", "chname": "快速易剥离支撑材料S-Purple", "feat": "自适应粘接技术，快拆技术，环境友好", "dimg":["SPurple0.png","SPurple1.png"]},
-        {"name": "S-Blue","img": "product/f2.jpg", "msg": "S-Blue快速男剥离支撑材料，通过调节与主体材料的支撑面粘接强度与S-Blue的自身粘接强度实现快速男剥离功能。S-Blue快速男剥离支撑材料在拆除支撑过程中无需使用水或溶剂，不产生水污染，安全环保", "chname": "快速易剥离支撑材料S-Blue", "feat": "自适应粘接技术，快拆技术，环境友好", "dimg":["SBlue0.png","SBlue1.png"]}
+        {"name": "S-Green","img": "product/sgreen.jpg", "msg": "S-Green快速易剥离支撑材料，通过调节与主体材料的支撑面粘接强度与S-Green的自身粘接强度实现决速易剥离功能。", "chname": "快速易剥离支撑材料S-Green", "feat": "自适应粘接技术，快拆技术，环境友好", "dimg":["SGreen0.jpg","SGreen1.jpg"]},
+        {"name": "S-Purple","img": "product/spurple.jpg", "msg": "S-Purple快速另剥离支撑材料，通过调节与主体材料的支撑面粘接强度与S-Purple的自身粘接强度实现决速易剥离功能.", "chname": "快速易剥离支撑材料S-Purple", "feat": "自适应粘接技术，快拆技术，环境友好", "dimg":["SPurple0.png","SPurple1.png"]},
+        {"name": "S-Blue","img": "product/sblue.jpg", "msg": "S-Blue快速男剥离支撑材料，通过调节与主体材料的支撑面粘接强度与S-Blue的自身粘接强度实现快速男剥离功能。S-Blue快速男剥离支撑材料在拆除支撑过程中无需使用水或溶剂，不产生水污染，安全环保", "chname": "快速易剥离支撑材料S-Blue", "feat": "自适应粘接技术，快拆技术，环境友好", "dimg":["SBlue0.png","SBlue1.png"]}
       ]
     },
     {
       "cate": "辅助工具",
       "v": [
-        {"name": "FusDry","img": "product/f2.jpg", "msg": "description", "chname": "FusDry线材干燥盒", "feat": "", "dimg":["Dry0.png","Dry1.png"]}
+        {"name": "FusDry","img": "product/dry.jpg", "msg": "description", "chname": "FusDry线材干燥盒", "feat": "", "dimg":["Dry0.png","Dry1.png"]}
       ]
     }
   ]

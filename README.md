@@ -63,3 +63,5 @@ detail页面推进了些
 轮播图设计以及链接实现
 ### [05231632]
 补充home company detail 修改contact
+### [05241726]
+保底存下

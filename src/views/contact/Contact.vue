@@ -31,12 +31,12 @@
           </div>
         </div>
       </div>
-      <div id="cOther">
+      <!-- <div id="cOther">
         <div>关注我们</div>
         <ul>
           <li v-for="(v, i) in Array(5)" :key="i" :style="{backgroundImage: `url(${require('img/contact/o'+i+'.png')})`}"></li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

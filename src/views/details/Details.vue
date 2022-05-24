@@ -12,7 +12,7 @@
         <div>
           <h1>{{pv.chname}}</h1>
           <h2>{{pv.feat}}</h2>
-          <span><i class="iconfont icon-24gf-telephone"></i> 联系电话</span>
+          <span @click="goContact"><i class="iconfont icon-24gf-telephone"></i> 联系电话</span>
         </div>
       </div>
     </div>
@@ -32,10 +32,13 @@ export default {
       actImgIdx: 0
     }
   },
+  methods:{
+    goContact () {
+      this.$router.push("/contact")
+    }
+  },
   created () {
     this.pv = JSON.parse(sessionStorage.getItem("pDetail"))
-
-
   }
 }
 </script>

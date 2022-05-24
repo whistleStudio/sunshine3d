@@ -1,6 +1,8 @@
 {
   "pData": [
     {"id": 1, "v": [
+      {"sub":"秸秆3D打印", "des":"助力绿色环保", "img": "activity/act0.jpg", "link2": "xxx"}
+
     ]},
     {"id": 2, "v": [
       {"sub":"工业与艺术的结合", "des":"大型户外雕塑的3DP砂型打印技术新形式", "img": "activity/b0.png", "link": "https://3dprint.ofweek.com/2022-04/ART-132102-8210-30559488.html"},
@@ -12,6 +14,9 @@
       {"sub":"复原千年敦煌壁画里的建筑之美", "des":" 三维扫描与3D打印为文物的复原与复制带来了便捷的数字化解决方案。", "img": "activity/b6.jpg", "link": "https://www.3ddayin.net/xinwenpindao/guoneidongtai/42475.html"}
     ]},
     {"id": 3, "v": [
+      {"sub":"秸秆3D打印", "des":"助力绿色环保", "img": "activity/act1.jpg", "link2": "xxx"},
+      {"sub":"秸秆3D打印", "des":"助力绿色环保", "img": "activity/act1.jpg", "link2": "xxxx"},
+      {"sub":"秸秆3D打印", "des":"助力绿色环保", "img": "activity/act1.jpg", "link2": "xxxxx"}
     ]}
   ]
 }

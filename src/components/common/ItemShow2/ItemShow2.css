@@ -50,10 +50,11 @@
 }
 .resume>h3 {
   height: 2vw;
-  font: normal 2rem/2vw "Microsoft YaHei";
+  font: normal 1.1rem/2vw "Microsoft YaHei";
 }
 .resume>div {
   height: 2vw;
+  font-size: 0.8rem;
   /* background-color: orange; */
 }
 .resume>span {
