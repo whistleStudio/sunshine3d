@@ -66,6 +66,9 @@ export default {
   align-items: center;
   cursor: pointer;
 }
+#navlist li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 #navlist li>div {
   width: 80px;
   height: 80px;

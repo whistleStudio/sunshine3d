@@ -27,7 +27,8 @@
       </div>
     </div>
     <div id="ICP">
-      <span>{{ICP}}</span>
+      <span @click="toBeian">{{ICP}}</span>
+      <a ref="beian" href="https://beian.miit.gov.cn/" target="_blank"></a>
     </div>
   </div>
 </template>
@@ -49,6 +50,9 @@
     methods: {
       qrJump () {
         this.$refs.qrA.click()
+      },
+      toBeian () {
+        this.$refs.beian.click()
       }
     }
   }
@@ -169,5 +173,6 @@
   }
   #ICP>span {
     margin: 0 auto;
+    cursor: pointer;
   }
 </style>

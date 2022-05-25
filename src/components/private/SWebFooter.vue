@@ -1,6 +1,6 @@
 <template>
   <web-footer :logoSrc="logoSrc" :infoData="infoData" 
-  :cateData="cateData" :qrImg="qrImg" ICP="版权所有 | 备案号xxxxxxx"></web-footer>
+  :cateData="cateData" :qrImg="qrImg" ICP="上善增材 版权所有  |  备案号 苏ICP备19068688号-3"></web-footer>
 </template>
 
 <script>
