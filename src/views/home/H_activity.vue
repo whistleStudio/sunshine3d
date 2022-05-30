@@ -1,7 +1,7 @@
 <!-- H_activity -->
 <template>
   <div id="activity">
-    <div id="intro"><span>公司动态</span></div>
+    <div id="intro"><span>发展历程</span></div>
     <timeline :acts="activities"/>
   </div>
 </template>

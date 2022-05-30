@@ -25,7 +25,7 @@
               </select>
               <input type="text" placeholder="*姓名" class="sendHalf">
             </div>
-            <div id="cSend3" style="height: 2.5vh"><input type="text" placeholder="*邮箱(我们会在24小时内回复您)" class="sendHalf"> <input type="text" placeholder="*所在地" class="sendHalf"></div>
+            <div id="cSend3" style="height: 2.5vh"><input type="text" placeholder="*邮箱" class="sendHalf"> <input type="text" placeholder="*所在地" class="sendHalf"></div>
             <div id="cSend4"><textarea name="" id="" cols="30" rows="10" placeholder="*详情描述"></textarea></div>
             <div id="cSubmit">提交</div>
           </div>
@@ -52,7 +52,7 @@
         infoData: [
           {id:0, img:`url(${require("img/contactIcon2.png")})`, text:"南京市栖霞区龙潭街道上坝村下坝工业园区5号"},
           {id:1, img:`url(${require("img/contactIcon1.png")})`, text:"wr79@live.com"},
-          {id:2, img:`url(${require("img/contactIcon0.png")})`, text:[["13813990536","曹经理"],["13337813756","汪经理"]]},    
+          {id:2, img:`url(${require("img/contactIcon0.png")})`, text:[["15895860823","曹经理"],["13337813756","汪经理"]]},    
         ],
       };
     },

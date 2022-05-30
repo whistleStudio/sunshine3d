@@ -18,8 +18,8 @@
           {
             id: 2, val: [{id: 0, title: "产品", eng: "product"}],
             cmenu: [
-              {cate: "通用级材料", v:["PLA","Tough-PETG","PETG-CF","Ordorless ABS","ASA"]},
-              {cate: "柔性材料", v:["TPU-95A","TPU-Foam"]},
+              {cate: "通用级材料", v:["PLA","ABS-GF","PETG-Matte"]},
+              {cate: "柔性材料", v:["TPU-95A"]},
               {cate: "工业级材料", v:["PETG-ESD","UltraPA","EasePA12-CF","UltraPA-GF","UltraPA-CF"]},
               {cate: "支撑材料", v:["S-Green","S-Purple","S-Blue"]},
               {cate: "辅助工具", v:["FusDry"]}
