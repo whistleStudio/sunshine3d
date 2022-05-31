@@ -17,19 +17,11 @@
     {
       "cate": "工业级材料",
       "v": [
-        {"name": "PETG-ESD","img": "product/petgesd.jpg", "msg": "PETG-ESD 是一款具有防静电功能的 3D 打印耗材，同时具有较好的打印性和均衡的机械性能。", "chname": "抗静电PETG", "feat": "防静电，机械性能均衡", "dimg":["PETGESD0.png","PETGESD1.png"]},
-        {"name": "UltraPA","img": "product/pla.jpg", "msg": "UltraPA专为FDM3D打印工艺开发，基材选用芳香族高温尼龙原料，与尼龙6柜比有强度与耐热性能更高吸湿率更低的优势。", "chname": "特种高温PA", "feat": "耐热性高，吸湿率低", "dimg":["UltraPA0.jpg", "UltraPA1.jpg"]},
-        {"name": "EasePA12-CF","img": "product/easepa12cf.jpg", "msg": "EasePA12-CF专为FDM3D打印工艺开发，基材选用PA12长链尼龙，具有低密度，低吸湿，高强度，高耐磨性，耐化学性优异和高耐热性的特点。", "chname": "碳纤增强PA12", "feat": "超低湿度敏感性，低密度，超强耐磨性", "dimg":["EasePA0.jpg","EasePA1.jpg","EasePA2.jpg"]},
-        {"name": "UltraPA-GF","img": "product/ultrapagf.jpg", "msg": "UltraPA-GF专为FDM3D打印工艺开发，基材选用高温尼龙，具有低吸湿，高强度，高耐磨性，耐化学性优异和高耐热性的特点。", "chname": "玻纤增强高温PA", "feat": "智能纤维增强技术，超低湿度敏感性，超强耐磨性", "dimg":["UltraPAGF0.jpg","UltraPAGF1.jpg"]},
-        {"name": "UltraPA-CF","img": "product/ultrapacf.jpg", "msg": "UltraPA-CF专为FDM3D打印工艺开发，基材选用高温尼龙，具有低吸湿，高强度，高耐磨性，耐化学性优异和高耐热性的特点。", "chname": "碳纤增强高温PA", "feat": "智能纤维增强技术，超低湿度敏感性，超强耐磨性", "dimg":["UltraPACF0.jpg","UltraPACF1.jpg"]}
-      ]
-    },
-    {
-      "cate": "支撑材料",
-      "v": [
-        {"name": "S-Green","img": "product/sgreen.jpg", "msg": "S-Green快速易剥离支撑材料，通过调节与主体材料的支撑面粘接强度与S-Green的自身粘接强度实现决速易剥离功能。", "chname": "快速易剥离支撑材料S-Green", "feat": "自适应粘接技术，快拆技术，环境友好", "dimg":["SGreen0.jpg","SGreen1.jpg"]},
-        {"name": "S-Purple","img": "product/spurple.jpg", "msg": "S-Purple快速另剥离支撑材料，通过调节与主体材料的支撑面粘接强度与S-Purple的自身粘接强度实现决速易剥离功能.", "chname": "快速易剥离支撑材料S-Purple", "feat": "自适应粘接技术，快拆技术，环境友好", "dimg":["SPurple0.png","SPurple1.png"]},
-        {"name": "S-Blue","img": "product/sblue.jpg", "msg": "S-Blue快速男剥离支撑材料，通过调节与主体材料的支撑面粘接强度与S-Blue的自身粘接强度实现快速男剥离功能。S-Blue快速男剥离支撑材料在拆除支撑过程中无需使用水或溶剂，不产生水污染，安全环保", "chname": "快速易剥离支撑材料S-Blue", "feat": "自适应粘接技术，快拆技术，环境友好", "dimg":["SBlue0.png","SBlue1.png"]}
+        {"name": "PAHT-CF","img": "product/pahtcf.png", "msg": "PAHT-CF专为FDM3D打印工艺开发，基材选用高温尼龙，具有低吸湿，高强度，高耐磨性，耐化学性优异和高耐热性的特点。", "chname": "碳纤增强高温PA", "feat": "智能纤维增强技术，超低湿度敏感性，超强耐磨性", "dimg":["pahtcf0.png","pahtcf1.png"]},
+        {"name": "PAHT-GF","img": "product/ultrapagf.jpg", "msg": "PAHT-GF专为FDM3D打印工艺开发，基材选用高温尼龙，具有低吸湿，高强度，高耐磨性，耐化学性优异和高耐热性的特点。", "chname": "玻纤增强高温PA", "feat": "智能纤维增强技术，超低湿度敏感性，超强耐磨性", "dimg":["pahtgf0.png","pahtgf1.jpg", "pahtgf2.jpg"]},
+        {"name": "PET-CF","img": "product/petcf.png", "msg": "PET-CF专为FDM3D打印工艺开发，基材选用PET工程材料，具有低吸湿，高强度，高蠕变，耐化学性优异和高耐热性的特点。", "chname": "碳纤增强涤纶聚酯", "feat": "高耐热，高强度，优秀抗蠕变性", "dimg":["petcf0.png","petcf1.png"]},
+        {"name": "PET-GF","img": "product/petgf.png", "msg": "PET-GF专为FDM3D打印工艺开发，基材选用PET工程材料，具有低吸湿，高强度，高蠕变，耐化学性优异和高耐热性的特点。", "chname": "特种高温PA", "feat": "高耐热，色彩丰富,高强度，优秀抗蠕变性", "dimg":["petgf0.png","petgf1.png","petgf2.png"]}
+       
       ]
     },
     {

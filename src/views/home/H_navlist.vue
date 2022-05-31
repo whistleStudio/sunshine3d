@@ -16,12 +16,12 @@ export default {
       // materials: ["PLA", "ABS", "PETG", "ASA", "TPU", "PA", "DryBox"],
       materials: [
         {name: "PLA", idx:[0,0]},
-        {name: "ABS", idx:[0,3]},
-        {name: "PETG", idx:[0,1]},
-        {name: "ASA", idx:[0,4]},
-        {name: "TPU", idx:[1,1]},
-        {name: "PA", idx:[2,1]},
-        {name: "DryBox", idx:[4,0]},
+        {name: "ABS", idx:[0,1]},
+        {name: "PETG", idx:[0,2]},
+        {name: "PAHT", idx:[2,0]},
+        {name: "TPU", idx:[1,0]},
+        {name: "PET", idx:[2,2]},
+        {name: "DryBox", idx:[3,0]},
       ]
     }
   },
