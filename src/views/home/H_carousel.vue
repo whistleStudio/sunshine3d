@@ -16,10 +16,10 @@ export default {
   data () {
     return {
         carouselImg: [
-         {img:'https://s1.ax1x.com/2022/05/24/XPtp4A.png',link:[0,1]},
-         {img:'https://s1.ax1x.com/2022/05/24/XPYQmD.png',link:[0,4]},
-         {img:'https://s1.ax1x.com/2022/05/24/XPY8kd.png',link:[1,1]},
-         {img:'https://s1.ax1x.com/2022/05/24/XPtp4A.png',link:[0,1]},
+         {img:'https://s1.ax1x.com/2022/06/11/XcBW3q.png',link:[0,2]},
+         {img:'https://s1.ax1x.com/2022/06/11/XcBRCn.png',link:[1,0]},
+         {img:'https://s1.ax1x.com/2022/06/11/XcBg4s.png',link:[0,1]},
+         {img:'https://s1.ax1x.com/2022/06/11/XcBW3q.png',link:[0,2]},
         ]
     }
   },

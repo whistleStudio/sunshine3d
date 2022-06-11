@@ -13,7 +13,7 @@ export default {
   data () {
     return {
       actLi: 0,
-      imgUrl: ["https://s1.ax1x.com/2022/05/24/XPJkGt.png","https://s1.ax1x.com/2022/05/24/XPJARP.png","https://s1.ax1x.com/2022/05/24/XPJExf.png"]
+      imgUrl: ["https://s1.ax1x.com/2022/05/24/XPJkGt.png","https://s1.ax1x.com/2022/05/24/XPJARP.png","https://s1.ax1x.com/2022/06/11/XcBfg0.png"]
     }
   }
 }

@@ -1,7 +1,8 @@
 <template>
   <div id="carousel">
     <ul ref="carouselUl" @mouseenter="startFlag=0" @mouseleave="startFlag=1">
-      <li ref="carouselLi" v-for="(v, i) in imgLink" :key="i" v-lazy:background-image="v.img" 
+      <!-- v-lazy:background-image="v.img" -->
+      <li ref="carouselLi" v-for="(v, i) in imgLink" :key="i"  :style="{backgroundImage: `url(${v.img})`}"
       @click="toDetail(v.link)"
       class="showItem"></li>
     </ul>
@@ -108,7 +109,7 @@ export default {
   height: 100%;
   flex: none;
 }
-.showItem[lazy=loaded] {
+/* .showItem[lazy=loaded] {
   background: center/cover no-repeat;
 }
 .showItem[lazy=loading] {
@@ -116,6 +117,9 @@ export default {
 }
 .showItem[lazy=error] {
   background: center/contain no-repeat;
+} */
+.showItem {
+  background: center/cover no-repeat;
 }
 #swapBtn {
   width: 100%;
