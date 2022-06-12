@@ -5,7 +5,10 @@
       "v": [
         {"name": "PLA","img": "product/sgreen.jpg", "msg": "PLA（聚乳酸）是一种新型的生物降解材料，使用可再生的植物资源（如玉米）所提出的淀粉原料制成。", "chname": "PLA", "feat": "高性价比，不堵头，色彩多样", "dimg":["PLA0.jpg", "PLA1.jpg"]},
         {"name": "ABS-GF","img": "product/abs.jpg", "msg": "ABS-GF是一款短切玻纤填充的ABS材料，提高了耗材的抗翘曲性能，并使悬垂面表面质量得到提高。", "chname": "低气味玻纤增强ABS", "feat": "低气味，低翘曲，高耐热", "dimg":["ABS1.png","ABS0.jpg"]},
-        {"name": "PETG-Matte","img": "product/petgm0.png", "msg": "PETG-Matte是一款短切玻纤填充的ABS材料，提高了耗材的抗翘曲性能，并使悬垂面表面质量得到提高。", "chname": "玻纤增强PETG", "feat": "抗翘曲，磨砂质感", "dimg":["petgm0.png","petgm1.png","petgm2.png","petgm3.png"]}
+        {"name": "PETG-Matte","img": "product/petgm0.png", "msg": "PETG-Matte是一款短切玻纤填充的ABS材料，提高了耗材的抗翘曲性能，并使悬垂面表面质量得到提高。", "chname": "玻纤增强PETG", "feat": "抗翘曲，磨砂质感", "dimg":["petgm0.png","petgm1.png","petgm2.png","petgm3.png"]},
+        {"name": "PETG-Tough","img": "product/toughpetg.jpg", "msg": "Tough-PETG是—款专为FDM开发的韧性改良PETG,通过提高材料流动性，使其具有极佳的打印性能。", "chname": "增韧型PETG", "feat": "高抗冲击性能，易打印", "dimg":["tough0.png","tough1.png"]},
+        {"name": "PETG-CF","img": "product/petgcf.jpg", "msg": "PETG-CF 是一款短切碳纤维填充的PETG材料，提高了耗材的抗翘曲性能，并使悬垂面表面质量得到提高，同时也赋予了材料磨砂的表面质感。", "chname": "碳纤增强PETG", "feat": "抗翘曲，磨砂质感", "dimg":["petgcf0.jpg"]},
+        {"name": "ASA","img": "product/asa.jpg", "msg": "ASA是—款综合性能优异的3D打印材料，材料性质和机械性能与ABS接近，并具有低气味和耐紫外老化的恃性。", "chname": "ASA", "feat": "低气味，抗紫外老化", "dimg":["ASA0.png","ASA1.png"]}
       ]
     },
     {

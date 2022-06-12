@@ -18,7 +18,7 @@
           {
             id: 2, val: [{id: 0, title: "产品", eng: "product"}],
             cmenu: [
-              {cate: "通用级材料", v:["PLA","ABS-GF","PETG-Matte"]},
+              {cate: "通用级材料", v:["PLA","ABS-GF","PETG-Matte", "PETG-Tough", "PETG-CF", "ASA"]},
               {cate: "柔性材料", v:["TPU-95A"]},
               {cate: "工业级材料", v:["PAHT-CF","PAHT-GF","PET-CF","PET-GF"]},
               {cate: "辅助工具", v:["FusDry"]}

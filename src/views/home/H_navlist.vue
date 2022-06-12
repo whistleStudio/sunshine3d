@@ -18,7 +18,7 @@ export default {
         {name: "PLA", idx:[0,0]},
         {name: "ABS", idx:[0,1]},
         {name: "PETG", idx:[0,2]},
-        {name: "PAHT", idx:[2,0]},
+        {name: "ASA", idx:[0,5]},
         {name: "TPU", idx:[1,0]},
         {name: "PET", idx:[2,2]},
         {name: "DryBox", idx:[3,0]},

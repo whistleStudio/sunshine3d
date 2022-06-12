@@ -7,8 +7,8 @@
       class="showItem"></li>
     </ul>
     <div id="swapBtn">
-        <span  @click="actChange(0)">&lt;</span>
-        <span  @click="actChange(1)">&gt;</span>
+        <span  @click="actChange(1)">&lt;</span>
+        <span  @click="actChange(0)">&gt;</span>
     </div>
   </div>
 </template>
