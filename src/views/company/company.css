@@ -1,5 +1,6 @@
 #company {
   background-color: rgb(247,247,247);
+  padding-bottom: 20px;
 }
 #company>div:not(:last-of-type) {
   margin-bottom: 5rem;
@@ -60,6 +61,12 @@ h1 {
   width: 60vw;
   height: calc(60vw / 2.8);
   background: url("~img/company/partner.png") center/contain no-repeat;
+}
+#cpyTeam>div {
+  margin: 0 auto;
+  width: 50vw;
+  height: calc(50vw / 1.7);
+  background: url("https://sszc-1300400818.cos.ap-nanjing.myqcloud.com/company/cpyteam.png") center/contain no-repeat;
 }
 /* #cpyGlory {
   margin-bottom: 0 !important;

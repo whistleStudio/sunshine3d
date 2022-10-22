@@ -18,10 +18,10 @@
       <h1>合作伙伴</h1>
       <div></div>
     </div>
-    <!-- <div id="cpyGlory">
-      <h1>企业荣誉</h1>
+    <div id="cpyTeam">
+      <h1>团队风采</h1>
       <div></div>
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -31,7 +31,7 @@
     data () {
       return {
         headImgSrc: `url(${require("img/company/header.jpg")})`,
-        cateData: ["公司简介", "核心价值观",  "合作伙伴"],
+        cateData: ["公司简介", "核心价值观",  "合作伙伴", "团队风采"],
         culture: [
           {title: "企业口号", text: "创造现实 成就梦想", icon: require("img/company/culture0.png")}, 
           {title: "企业愿景", text: "xxxx", icon: require("img/company/culture1.png")}, 
