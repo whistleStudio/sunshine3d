@@ -1,15 +1,17 @@
 {
   "pData": [
     {"id": 1, "v": [
+      {"sub":"上善增材助力六朝博物馆特展", "des":"3D打印古希腊彩陶，让视力障碍的孩子通过触摸方式感受“文化之美”", "img": "https://sszc-1300400818.cos.ap-nanjing.myqcloud.com/activity/%E5%85%AD%E6%9C%9D%E5%8D%9A%E7%89%A9.jpg", "link": "https://mp.weixin.qq.com/s/AEKmVV6tK5nnTklOxXV5_Q"},
+      {"sub":"上善增材与中兴人工智能合作", "des":"高精3D打印零部件供应，助力霞智科技新型机器人研发", "img": "https://sszc-1300400818.cos.ap-nanjing.myqcloud.com/home/%E6%88%98%E7%95%A5%E5%90%88%E4%BD%9C.png", "link": "https://www.xzrobot.com/about_pc"}
     ]},
     {"id": 2, "v": [
-      {"sub":"工业与艺术的结合", "des":"大型户外雕塑的3DP砂型打印技术新形式", "img": "activity/b0.png", "link": "https://3dprint.ofweek.com/2022-04/ART-132102-8210-30559488.html"},
-      {"sub":"3D打印新突破", "des":"非逐层打印，打印物体完全由厚树脂支撑，可以从任何角度进行添加", "img": "activity/b1.png", "link": "https://3dprint.ofweek.com/2022-04/ART-132101-8130-30558524.html"},
-      {"sub":"3D打印可回收背包", "des":"堆肥状态下能够自动降解，对环境不造成任何污染", "img": "activity/b2.png", "link": "https://3dprint.ofweek.com/2022-03/ART-132105-8140-30552864.html"},
-      {"sub":"通知：TCT3D打印展将延期举行", "des":"今年的TCT 亚洲3D打印、增材制造展览会将于8月31日-9月2日举办，举办地点...", "img": "activity/b3.jpg", "link": "http://nanjixiong.com/thread-154590-1-1.html"},
-      {"sub":"直接声音打印，聚焦超声3D打印", "des":"现有的增材制造能源（光和热）没有充分利用化学潜力来控制参数，而声音直接...", "img": "activity/b4.jpg", "link": "http://nanjixiong.com/thread-154588-1-1.html"},
-      {"sub":"3D打印核酸检测亭南京投入使用", "des":"一天时间打印一座房子的基本构件，再花短短几个小时便可组装完成", "img": "activity/b5.jpg", "link": "http://nanjixiong.com/thread-154573-1-1.html"},
-      {"sub":"复原千年敦煌壁画里的建筑之美", "des":" 三维扫描与3D打印为文物的复原与复制带来了便捷的数字化解决方案。", "img": "activity/b6.jpg", "link": "https://www.3ddayin.net/xinwenpindao/guoneidongtai/42475.html"}
+      {"sub":"工业与艺术的结合", "des":"大型户外雕塑的3DP砂型打印技术新形式", "img": "https://sszc-1300400818.cos.ap-nanjing.myqcloud.com/activity/b0.png", "link": "https://3dprint.ofweek.com/2022-04/ART-132102-8210-30559488.html"},
+      {"sub":"3D打印新突破", "des":"非逐层打印，打印物体完全由厚树脂支撑，可以从任何角度进行添加", "img": "https://sszc-1300400818.cos.ap-nanjing.myqcloud.com/activity/b1.png", "link": "https://3dprint.ofweek.com/2022-04/ART-132101-8130-30558524.html"},
+      {"sub":"3D打印可回收背包", "des":"堆肥状态下能够自动降解，对环境不造成任何污染", "img": "https://sszc-1300400818.cos.ap-nanjing.myqcloud.com/activity/b2.png", "link": "https://3dprint.ofweek.com/2022-03/ART-132105-8140-30552864.html"},
+      {"sub":"通知：TCT3D打印展将延期举行", "des":"今年的TCT 亚洲3D打印、增材制造展览会将于8月31日-9月2日举办，举办地点...", "img": "https://sszc-1300400818.cos.ap-nanjing.myqcloud.com/activity/b3.jpg", "link": "http://nanjixiong.com/thread-154590-1-1.html"},
+      {"sub":"直接声音打印，聚焦超声3D打印", "des":"现有的增材制造能源（光和热）没有充分利用化学潜力来控制参数，而声音直接...", "img": "https://sszc-1300400818.cos.ap-nanjing.myqcloud.com/activity/b4.jpg", "link": "http://nanjixiong.com/thread-154588-1-1.html"},
+      {"sub":"3D打印核酸检测亭南京投入使用", "des":"一天时间打印一座房子的基本构件，再花短短几个小时便可组装完成", "img": "https://sszc-1300400818.cos.ap-nanjing.myqcloud.com/activity/b5.jpg", "link": "http://nanjixiong.com/thread-154573-1-1.html"},
+      {"sub":"复原千年敦煌壁画里的建筑之美", "des":" 三维扫描与3D打印为文物的复原与复制带来了便捷的数字化解决方案。", "img": "https://sszc-1300400818.cos.ap-nanjing.myqcloud.com/activity/b6.jpg", "link": "https://www.3ddayin.net/xinwenpindao/guoneidongtai/42475.html"}
     ]},
     {"id": 3, "v": [
     ]}

@@ -3,22 +3,24 @@
     <ul id="pItems" v-if="actCateIdx != -1" >
       <li v-for="(v, i) in pData[actCateIdx].v.slice(pStart, pEnd)" :key="i" 
       @mouseover="triggerHover(i)"  @mouseout="removeHover(i)" @click="getInfo(i)">
-        <div class="pic" :style="{backgroundImage: `url(${require('img/'+v.img)})`}"></div>
+        <!-- <div class="pic" :style="{backgroundImage: `url(${require('img/'+v.img)})`}"></div> 之前本地版--> 
+        <div class="pic" :style="{backgroundImage: `url(${v.img})`}"></div>
         <div class="resume">
           <h3>{{v.sub}}</h3>
-          <div>{{v.des}}</div>
-          <span>了解更多</span>
+          <div v-if="_isShowDes">{{v.des}}</div>
+          <span v-if="_isShowDes">了解更多</span>
         </div>
       </li>
     </ul>
     <ul id="pItems" v-else >
       <li v-for="(v, i) in totals.slice(pStart, pEnd)" :key="i" 
       @mouseover="triggerHover(i)"  @mouseout="removeHover(i)" @click="getInfo(i)">
-        <div class="pic" :style="{backgroundImage: `url(${require('img/'+v.img)})`}"></div>
+        <!-- <div class="pic" :style="{backgroundImage: `url(${require('img/'+v.img)})`}"></div> 之前本地版-->
+        <div class="pic" :style="{backgroundImage: `url(${v.img})`}"></div>
         <div class="resume">
           <h3>{{v.sub}}</h3>
-          <div>{{v.des}}</div>
-          <span>了解更多</span>
+          <div v-if="_isShowDes">{{v.des}}</div>
+          <span v-if="_isShowDes">了解更多</span>
         </div>
       </li>                    
     </ul>
@@ -80,7 +82,11 @@ export default {
       type: Number,
       default: -1
     },
-    _pEndMax: Number
+    _pEndMax: Number,
+    _isShowDes: {
+      type: Boolean,
+      default: true
+    }
   },
   methods: {
     selectPage (i) {

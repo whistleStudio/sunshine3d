@@ -2,7 +2,7 @@
   <div id="mainshow">
     <div :style="{backgroundImage: `url(${imgUrl[actLi]})`}">
       <ul>
-        <li v-for="(v, i) in Array(3).fill(0)" :key="i" @click="actLi=i" :class="{actLi: actLi===i}"></li>
+        <li v-for="(v, i) in Array(4).fill(0)" :key="i" @click="actLi=i" :class="{actLi: actLi===i}"></li>
       </ul>
     </div>
   </div>
@@ -13,7 +13,12 @@ export default {
   data () {
     return {
       actLi: 0,
-      imgUrl: ["https://s1.ax1x.com/2022/05/24/XPJkGt.png","https://s1.ax1x.com/2022/05/24/XPJARP.png","https://s1.ax1x.com/2022/06/11/XcBfg0.png"]
+      imgUrl: [
+        "https://s1.ax1x.com/2022/05/24/XPJkGt.png",
+        "https://sszc-1300400818.cos.ap-nanjing.myqcloud.com/home/%E6%88%98%E7%95%A5%E5%90%88%E4%BD%9C.png",
+        "https://s1.ax1x.com/2022/05/24/XPJARP.png",
+        "https://s1.ax1x.com/2022/06/11/XcBfg0.png"
+      ]
     }
   }
 }
@@ -37,7 +42,7 @@ export default {
     height: 20px;
     position: absolute;
     left: 50%;
-    transform: translateY(-50%);
+    transform: translateX(-50%);
     bottom: 50px;
     display: flex;
     justify-content: space-between;

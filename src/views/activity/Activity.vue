@@ -2,7 +2,7 @@
 <template>
   <div id="activity">
     <page-nav-bar :headImg="headImgSrc" :cate="cateData"  @cateclick="changeContent"></page-nav-bar>
-    <item-show2 :_pData="pData" :_actCateIdx="actCateIdx" :_pEndMax="pEndMax" ></item-show2>
+    <item-show2 :_pData="pData" :_actCateIdx="actCateIdx" :_pEndMax="pEndMax" :_isShowDes="isShowDes"></item-show2>
   </div>
 </template>
 
@@ -19,6 +19,7 @@
         pData: [],
         actCateIdx: -1,
         pEndMax: 9,
+        isShowDes: true
       };
     },
     components: {
@@ -32,6 +33,8 @@
     },
     created () {
       this.pData = productData.pData
+      console.log(window.screen.width)
+      if (window.screen.width < 900) this.isShowDes = false
       // console.log(this.pData)
     }        
   }
