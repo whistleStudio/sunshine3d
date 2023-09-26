@@ -7,6 +7,7 @@ import {pData} from "views/product/productData.json"
 
 Vue.config.productionTip = false
 Vue.prototype.$pData = pData
+Vue.prototype.$cos = "https://sszc-1300400818.cos.ap-nanjing.myqcloud.com"
 Vue.use(VueLazyload, {
   preLoad: 1.3,
   error: 'https://s1.ax1x.com/2022/05/25/XFSyb4.jpg',

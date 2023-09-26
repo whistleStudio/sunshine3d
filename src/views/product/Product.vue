@@ -8,7 +8,8 @@
         <ul>
           <li v-for="(pv,pi) in v.v" :key="pi" 
           @mouseenter="actProIdx=10*i+pi" @mouseleave="actProIdx=-1"> 
-            <div class="proImg" :style="{backgroundImage: `url(${require('img/'+pv.img)})`}"></div>
+            <div class="proImg" :style="{backgroundImage: `url(${pv.img})`}"></div>
+            <!-- <div class="proImg" :style="{backgroundImage: `url(${require('img/'+pv.img)})`}"></div> -->
             <span class="proName">{{pv.name}}</span>
             <div v-if="actProIdx==(10*i+pi)" class="proLiHover" @click="toDetailsPage(pv)">
               <span>{{pv.msg}}</span>
@@ -22,20 +23,19 @@
 
 <script>
   import PageNavBar from "components/common/PageNavBar"
-  import {pData} from "views/product/productData.json"
 
   export default {
     data () {
       return {
-        headImgSrc: `url(${require("img/product/header.jpg")})`,
-        pData,
+        headImgSrc: `url(${this.$cos}/product/header.jpg)`,
+        pData: this.$pData,
         actProIdx: -1,
       };
     },
     computed: {
       cateData: function () {
         let list = []
-        pData.forEach(e => {
+        this.pData.forEach(e => {
           list.push(e.cate)
         })
         return list

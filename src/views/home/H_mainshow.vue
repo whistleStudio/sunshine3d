@@ -14,10 +14,10 @@ export default {
     return {
       actLi: 0,
       imgUrl: [
-        "https://s1.ax1x.com/2022/05/24/XPJkGt.png",
-        "https://sszc-1300400818.cos.ap-nanjing.myqcloud.com/home/%E6%88%98%E7%95%A5%E5%90%88%E4%BD%9C.png",
-        "https://s1.ax1x.com/2022/05/24/XPJARP.png",
-        "https://s1.ax1x.com/2022/06/11/XcBfg0.png"
+        `${this.$cos}/home/mainshow/m1.png`,
+        `${this.$cos}/home/mainshow/m2.png`,
+        `${this.$cos}/home/mainshow/m3.png`,
+        `${this.$cos}/home/mainshow/m4.png`,
       ]
     }
   }

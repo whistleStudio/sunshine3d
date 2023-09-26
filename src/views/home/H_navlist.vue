@@ -2,7 +2,7 @@
   <div id="navlist">
     <ul>
       <li v-for="(v, i) in materials" :key="i" @click="toDetail(v)">
-        <div :style="{backgroundImage: `url(${require('img/materialsicon-0'+(i+1)+'.png')})`}"></div>
+        <div :style="{backgroundImage: `url(${$cos}/home/carousel/h_navlist/materialsicon-0${i+1}.png)`}"></div>
         <span>{{v.name}}</span>
       </li>
     </ul>

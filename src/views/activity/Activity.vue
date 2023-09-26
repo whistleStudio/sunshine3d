@@ -14,7 +14,7 @@
   export default {
     data () {
       return {
-        headImgSrc: `url(${require("img/activity/header.jpg")})`,
+        headImgSrc: `url(${this.$cos}/activity/header.jpg)`,
         cateData: ["全部", "公司动态", "行业资讯", "新品介绍"],
         pData: [],
         actCateIdx: -1,

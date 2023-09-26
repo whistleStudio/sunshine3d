@@ -1,10 +1,12 @@
+<!-- details <<< product传的session影响 <<< $pData <<< productData -->
+
 <template>
   <div id="details">
     <div id="head">
       <div id="hLeft">
-        <div :style="{backgroundImage: `url(/details/${pv.dimg[actImgIdx]})`}"></div>
+        <div :style="{backgroundImage: `url(${$cos}/details/${pv.dimg[actImgIdx]})`}"></div>
         <ul>
-          <li v-for="(v, i) in pv.dimg" :key="i" :style="{backgroundImage: `url(/details/${v})`}"
+          <li v-for="(v, i) in pv.dimg" :key="i" :style="{backgroundImage: `url(${$cos}/details/${v})`}"
           @click="actImgIdx=i"></li>
         </ul>
       </div>
@@ -18,7 +20,7 @@
     </div>
     <div id="main">
       <div>详细信息</div>
-      <img :src="`/details/${pv.name}.png`" alt="">
+      <img :src="`${$cos}/details/${pv.name}.png`" alt="">
       <div></div>
     </div>
   </div>

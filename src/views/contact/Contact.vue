@@ -47,12 +47,12 @@
   export default {
     data () {
       return {
-        headImgSrc: `url(${require("img/contact/header.jpg")})`,
+        headImgSrc: `url(${this.$cos}/contact/header.jpg)`,
         cateData: [],
         infoData: [
-          {id:0, img:`url(${require("img/contactIcon2.png")})`, text:"南京市栖霞区龙潭街道上坝村下坝工业园区5号"},
-          {id:1, img:`url(${require("img/contactIcon1.png")})`, text:"wr79@live.com"},
-          {id:2, img:`url(${require("img/contactIcon0.png")})`, text:[["15895860823","曹经理"],["13337813756","汪经理"]]},    
+          {id:0, img:`url(${this.$cos}/contact/contactIcon2.png)`, text:"南京市栖霞区龙潭街道上坝村下坝工业园区5号"},
+          {id:1, img:`url(${this.$cos}/contact/contactIcon1.png)`, text:"wr79@live.com"},
+          {id:2, img:`url(${this.$cos}/contact/contactIcon0.png)`, text:[["15895860823","曹经理"],["13337813756","汪经理"]]},    
         ],
       };
     },

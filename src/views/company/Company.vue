@@ -8,7 +8,7 @@
     </div>
     <div id="cpyCulture">
       <h1>核心价值观</h1>
-      <div><img :src="require('img/company/culture2.png')" alt=""><span>Special for you, <span style="color: rgb(50, 187, 169)">Green</span> & Safety</span></div>
+      <div><img :src="`${this.$cos}/company/culture2.png`" alt=""><span>Special for you, <span style="color: rgb(50, 187, 169)">Green</span> & Safety</span></div>
     </div>
     <div id="cpyDev">
       <!-- <h1>企业理念</h1> -->
@@ -30,14 +30,14 @@
   export default {
     data () {
       return {
-        headImgSrc: `url(${require("img/company/header.jpg")})`,
+        headImgSrc: `url("${this.$cos}/company/header.jpg")`,
         cateData: ["公司简介", "核心价值观",  "合作伙伴", "团队风采"],
-        culture: [
-          {title: "企业口号", text: "创造现实 成就梦想", icon: require("img/company/culture0.png")}, 
-          {title: "企业愿景", text: "xxxx", icon: require("img/company/culture1.png")}, 
-          {title: "企业价值观", text: "xxxx", icon: require("img/company/culture2.png")}, 
-          {title: "企业使命", text: "xxxx", icon: require("img/company/culture3.png")}
-        ]
+        // culture: [
+        //   {title: "企业口号", text: "创造现实 成就梦想", icon: `${this.$cos}/company/culture0`}, 
+        //   {title: "企业愿景", text: "xxxx", icon:              `${this.$cos}/company/culture1`}, 
+        //   {title: "企业价值观", text: "xxxx", icon:            `${this.$cos}/company/culture2`}, 
+        //   {title: "企业使命", text: "xxxx", icon:              `${this.$cos}/company/culture3`}
+        // ]
       };
     },
     components: {
