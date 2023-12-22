@@ -67,12 +67,16 @@ export default {
     /* 详情页 */
     toDetail (link) {
       let i = link[0], ci = link[1]
-      let pv = this.$pData[i].v[ci] 
-      sessionStorage.setItem("pDetail", JSON.stringify(pv))
-      this.$router.push({
-        path: "/product/details",
-        query: {pv}
-      })     
+      if (i >= 0) {
+        let pv = this.$pData[i].v[ci] 
+        sessionStorage.setItem("pDetail", JSON.stringify(pv))
+        this.$router.push({
+          path: "/product/details",
+          query: {pv}
+        }) 
+      } else {
+        window.open(ci, "_blank");
+      }
     }
   },
   mounted () {
@@ -119,7 +123,7 @@ export default {
   background: center/contain no-repeat;
 } */
 .showItem {
-  background: center/cover no-repeat;
+  background: center/contain no-repeat;
 }
 #swapBtn {
   width: 100%;
