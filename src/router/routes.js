@@ -7,10 +7,10 @@ const Details = () => import("views/details/Details")
 const ActInfo = () => import("views/actInfo/ActInfo")
 
 const routes = [
-  {
-    path: '',
-    redirect: "/home"
-  },
+  // {
+  //   path: '',
+  //   redirect: "/home"
+  // },
   {
     path: '/home',
     component: Home

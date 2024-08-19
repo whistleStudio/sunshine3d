@@ -1,8 +1,11 @@
 <template>
   <div id="app">
-    <s-nav-bar :navStyleFlag="navStyleFlag"></s-nav-bar>
+    <s-nav-bar :navStyleFlag="navStyleFlag" v-show="$route.path.length>4"></s-nav-bar>
     <router-view></router-view>
-    <s-web-footer></s-web-footer>
+    <s-web-footer v-show="$route.path.length>4"></s-web-footer>
+    <div v-if="$route.path.length==1" class="niceshow">
+      <a href="https://beian.miit.gov.cn/#/Integrated/index">苏ICP备19068688号-3</a>
+    </div>
   </div>
 </template>
 
@@ -46,4 +49,16 @@
 
 <style>
   @import "assets/css/base.css";
+  .niceshow {
+    width: 100vw;
+    height: 100vh;
+    background: url(https://sszc-1300400818.cos.ap-nanjing.myqcloud.com/home/mainshow/m4.png) center/contain no-repeat;
+    a {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 10px;
+      color: #aaa;
+    }
+  }
 </style>
