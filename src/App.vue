@@ -40,6 +40,7 @@
     },
     mounted () {
       window.addEventListener("scroll", this.windowScroll)
+      setTimeout(()=>{if(this.$route.path.length>3) window.document.title = "上善增材"}, 500)
     },
     destroyed () {
       window.removeEventListener("scroll", this.windowScroll)
