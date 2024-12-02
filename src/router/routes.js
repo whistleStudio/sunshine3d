@@ -7,10 +7,11 @@ const Details = () => import("views/details/Details")
 const ActInfo = () => import("views/actInfo/ActInfo")
 
 const routes = [
-  // {
-  //   path: '',
-  //   redirect: "/home"
-  // },
+  // 检查时，注释掉默认跳转
+  {
+    path: '',
+    redirect: "/home"
+  },
   {
     path: '/home',
     component: Home

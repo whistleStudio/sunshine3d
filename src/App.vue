@@ -17,7 +17,8 @@
     name: 'App',
     data () {
       return {
-        navStyleFlag: 1
+        navStyleFlag: 1,
+        safeLength: 0 // 检查修改为3，至右到home时才显示真正页面
       }
     },
     components: {
@@ -40,7 +41,7 @@
     },
     mounted () {
       window.addEventListener("scroll", this.windowScroll)
-      setTimeout(()=>{if(this.$route.path.length>3) window.document.title = "上善增材"}, 500)
+      setTimeout(()=>{if(this.$route.path.length>this.safeLength) window.document.title = "上善增材"}, 50)
     },
     destroyed () {
       window.removeEventListener("scroll", this.windowScroll)
