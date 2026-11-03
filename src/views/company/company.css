@@ -1,8 +1,8 @@
 #company {
-  background-color: rgb(247,247,247);
+  background-color: rgb(247, 247, 247);
   padding-bottom: 20px;
 }
-#company>div:not(:last-of-type) {
+#company > div:not(:last-of-type) {
   margin-bottom: 5rem;
 }
 h1 {
@@ -14,10 +14,10 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
-#cpyIntro>span {
+#cpyIntro > span {
   display: block;
 }
-#cpyIntro>div {
+#cpyIntro > div {
   width: 35%;
   /* height: 20vh; */
   box-sizing: border-box;
@@ -29,7 +29,7 @@ h1 {
   margin: 0 auto;
   /* background-color: yellow;   */
 }
-#cpyCulture>div {
+#cpyCulture > div {
   width: 100%;
   height: 10vh;
   background-color: white;
@@ -37,7 +37,6 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 #cpyCulture img {
   width: 2.5vw;
@@ -51,23 +50,26 @@ h1 {
   color: rgb(83, 113, 181);
   font: italic bold 1.8rem sans-serif;
 }
-#cpyDev>div {
+#cpyDev > div {
   width: 100%;
   height: 35vh;
   /* background: url("~img/company/development.jpg") center/cover no-repeat; */
-  background: url("https://sszc-1300400818.cos.ap-nanjing.myqcloud.com/company/development.jpg") center/cover no-repeat;
+  background: url("https://sszc-1300400818.cos.ap-nanjing.myqcloud.com/assets/company/development.jpg")
+    center/cover no-repeat;
 }
-#cpyPartner>div {
+#cpyPartner > div {
   margin: 0 auto;
   width: 60vw;
   height: calc(60vw / 2.8);
-  background: url("https://sszc-1300400818.cos.ap-nanjing.myqcloud.com/company/partner.png") center/contain no-repeat;
+  background: url("https://sszc-1300400818.cos.ap-nanjing.myqcloud.com/assets/company/partner.png")
+    center/contain no-repeat;
 }
-#cpyTeam>div {
+#cpyTeam > div {
   margin: 0 auto;
   width: 50vw;
   height: calc(50vw / 1.7);
-  background: url("https://sszc-1300400818.cos.ap-nanjing.myqcloud.com/company/cpyteam.png") center/contain no-repeat;
+  background: url("https://sszc-1300400818.cos.ap-nanjing.myqcloud.com/assets/company/cpyteam.png")
+    center/contain no-repeat;
 }
 /* #cpyGlory {
   margin-bottom: 0 !important;
